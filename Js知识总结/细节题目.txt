@@ -1,4 +1,4 @@
-----有关parseInt（） 和array.map()用法
+-----有关parseInt（） 和array.map()用法
 
 + parseInt（String, radix）;//并按照radix数字基数解析字符串，并返回第一个数字。
 	+ radix省略或者为0时解析为十进制，参数小于2大于36返回NaN
