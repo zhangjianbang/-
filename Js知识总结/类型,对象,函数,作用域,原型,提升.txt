@@ -1,29 +1,29 @@
-----------------------------Êý¾ÝÀàÐÍ------------------------------
+-----------------------------æ•°æ®ç±»åž‹------------------------------
 
-+Êý¾ÝÀàÐÍ
-	+»ù±¾Êý¾ÝÀàÐÍ£ºString¡¢Boolean¡¢Number¡¢Undefined¡¢Null
-	+ÒýÓÃÊý¾ÝÀàÐÍ£ºObject¡¢Function¡¢Array¡¢Date¡¢RegExp+
-	+ÅÐ¶ÏÊÇ·ñÎªÊý×ÖÀàÐÍ£ºisNaN(num)---ÊÇ·µ»Øfalse£¬·ñ·µ»Øtrue
++æ•°æ®ç±»åž‹
+	+åŸºæœ¬æ•°æ®ç±»åž‹ï¼šStringã€Booleanã€Numberã€Undefinedã€Null
+	+å¼•ç”¨æ•°æ®ç±»åž‹ï¼šObjectã€Functionã€Arrayã€Dateã€RegExp+
+	+åˆ¤æ–­æ˜¯å¦ä¸ºæ•°å­—ç±»åž‹ï¼šisNaN(num)---æ˜¯è¿”å›žfalseï¼Œå¦è¿”å›žtrue
 
-+ »ù±¾ÀàÐÍ£º´æ·ÅÔÚÕ»ÄÚ´æµÄ¼òµ¥Êý¾Ý¶Î£¬Êý¾Ý´óÐ¡È·¶¨£¬ÄÚ´æ¿Õ¼ä´óÐ¡¿ÉÒÔÖ±½Ó·ÖÅä¡£
-+ ÒýÓÃÀàÐÍ£º´æ·ÅÔÚ¶ÑÄÚ´æµÄ¶ÔÏó£¬±äÁ¿±£´æµÄÊÇÖ¸Õë£¬Ö¸Ïò¶ÑÖÐµÄ¶ÔÏó¡£µ±ÎÒÃÇ·ÃÎÊÒýÓÃÀàÐÍ£¬ÏÖÔÚÕ»ÖÐÕÒµ½¸Ã±äÁ¿µÄÖ¸Õë£¬È»ºó´Ó¶ÑÖÐ¶ÁÈ¡ÏàÓ¦Êý¾Ý¡£
-+ »ù±¾ÀàÐÍºÍÒýÓÃÀàÐÍ×î´óÇø±ð£ºÈ¡Öµ£¬È¡µØÖ·¡£
-+ ÒýÓÃÀàÐÍÏàµ±ÓÚÃæÏò¶ÔÏóÀàµÄ¸ÅÄî£¬ËüÃèÊöµÄÊÇÒ»Àà¶ÔÏóµÄÊôÐÔºÍ·½·¨¡£
++ åŸºæœ¬ç±»åž‹ï¼šå­˜æ”¾åœ¨æ ˆå†…å­˜çš„ç®€å•æ•°æ®æ®µï¼Œæ•°æ®å¤§å°ç¡®å®šï¼Œå†…å­˜ç©ºé—´å¤§å°å¯ä»¥ç›´æŽ¥åˆ†é…ã€‚
++ å¼•ç”¨ç±»åž‹ï¼šå­˜æ”¾åœ¨å †å†…å­˜çš„å¯¹è±¡ï¼Œå˜é‡ä¿å­˜çš„æ˜¯æŒ‡é’ˆï¼ŒæŒ‡å‘å †ä¸­çš„å¯¹è±¡ã€‚å½“æˆ‘ä»¬è®¿é—®å¼•ç”¨ç±»åž‹ï¼ŒçŽ°åœ¨æ ˆä¸­æ‰¾åˆ°è¯¥å˜é‡çš„æŒ‡é’ˆï¼Œç„¶åŽä»Žå †ä¸­è¯»å–ç›¸åº”æ•°æ®ã€‚
++ åŸºæœ¬ç±»åž‹å’Œå¼•ç”¨ç±»åž‹æœ€å¤§åŒºåˆ«ï¼šå–å€¼ï¼Œå–åœ°å€ã€‚
++ å¼•ç”¨ç±»åž‹ç›¸å½“äºŽé¢å‘å¯¹è±¡ç±»çš„æ¦‚å¿µï¼Œå®ƒæè¿°çš„æ˜¯ä¸€ç±»å¯¹è±¡çš„å±žæ€§å’Œæ–¹æ³•ã€‚
 	
-+ÅÐ¶ÏÀàÐÍµÄ·½·¨
-	+typeof£º·µ»Ø±äÁ¿µÄ»ù±¾Êý¾ÝÀàÐÍ£¬ÈçÏÂ£ºString¡¢Boolean¡¢Number¡¢Undefined¡¢Function¡¢Object
-	+instanceof£ºÅÐ¶ÏÒ»¸ö¹¹Ôìº¯ÊýµÄprototypeÊôÐÔËùÖ¸ÏòµÄ¶ÔÏóÊÇ·ñ´æÔÚÓÚÁíÒ»¸öÒª¼ì²â¶ÔÏóµÄÔ­ÐÍÁ´ÉÏ¡£
-		  £ºÖ»ÄÜÓÃÓÚÅÐ¶Ï¶ÔÏóºÍº¯Êý£¡
-	+instanceofµÄÔ´Âë:  A instanceof B;
++åˆ¤æ–­ç±»åž‹çš„æ–¹æ³•
+	+typeofï¼šè¿”å›žå˜é‡çš„åŸºæœ¬æ•°æ®ç±»åž‹ï¼Œå¦‚ä¸‹ï¼šStringã€Booleanã€Numberã€Undefinedã€Functionã€Object
+	+instanceofï¼šåˆ¤æ–­ä¸€ä¸ªæž„é€ å‡½æ•°çš„prototypeå±žæ€§æ‰€æŒ‡å‘çš„å¯¹è±¡æ˜¯å¦å­˜åœ¨äºŽå¦ä¸€ä¸ªè¦æ£€æµ‹å¯¹è±¡çš„åŽŸåž‹é“¾ä¸Šã€‚
+		  ï¼šåªèƒ½ç”¨äºŽåˆ¤æ–­å¯¹è±¡å’Œå‡½æ•°ï¼
+	+instanceofçš„æºç :  A instanceof B;
 		var AP = A.__proto__;
 		var BP = B.prototype;
 		if (AP==BP) return true;
 
---------------------------Õ»¶Ñ¡¢Ç³¿½±´£¬Éî¿½±´---------------------
-Ç³¿½±´£º¶ÔÓÚ×Ö·û´®ÊÇÖµµÃ¸´ÖÆ£¬¶ÔÓÚ¶ÔÏóÀ´ËµÊÇ¶Ô¶ÔÏóµØÖ·µÄ¸´ÖÆ£¬Á½¸ö¶ÔÏóÖ¸ÏòÍ¬Ò»µØÖ·¡£
-Éî¿½±´£º¸´ÖÆËùÓÐÊôÐÔ£¬ÔÚ¶ÑÖÐ¿ª±ÙÄÚ´æ£¬°Ñ¶ÔÏó¸´ÖÆµ½¿ª±ÙµÄ¿Õ¼äÖÐ£¬±£Ö¤Á½×é¶ÔÏó»¥²»¸ÉÈÅ¡£
+--------------------------æ ˆå †ã€æµ…æ‹·è´ï¼Œæ·±æ‹·è´---------------------
+æµ…æ‹·è´ï¼šå¯¹äºŽå­—ç¬¦ä¸²æ˜¯å€¼å¾—å¤åˆ¶ï¼Œå¯¹äºŽå¯¹è±¡æ¥è¯´æ˜¯å¯¹å¯¹è±¡åœ°å€çš„å¤åˆ¶ï¼Œä¸¤ä¸ªå¯¹è±¡æŒ‡å‘åŒä¸€åœ°å€ã€‚
+æ·±æ‹·è´ï¼šå¤åˆ¶æ‰€æœ‰å±žæ€§ï¼Œåœ¨å †ä¸­å¼€è¾Ÿå†…å­˜ï¼ŒæŠŠå¯¹è±¡å¤åˆ¶åˆ°å¼€è¾Ÿçš„ç©ºé—´ä¸­ï¼Œä¿è¯ä¸¤ç»„å¯¹è±¡äº’ä¸å¹²æ‰°ã€‚
 
------------>Ç³¿½±´£¬A£¬BÖ»ÓÐ²Ù×÷Êý×éºÍ¶ÔÏóÊôÐÔ»áÓ°Ïì¶ÔÏó
+----------->æµ…æ‹·è´ï¼ŒAï¼ŒBåªæœ‰æ“ä½œæ•°ç»„å’Œå¯¹è±¡å±žæ€§ä¼šå½±å“å¯¹è±¡
 	var a = {
 		name:["zjb"],
 		age:20
@@ -40,7 +40,7 @@
 	b,age = 23;
 	console.log(a.age);
 
-------------->Éî¿½±´£¨Ê¹ÓÃµÝ¹é£©--A£¬B²Ù×÷»¥²»Ïë¸É£¨°Ñ¸¸¶ÔÏóÖÐËùÓÐÊôÓÚ¶ÔÏóÊôÐÔÀàÐÍ¶¼±éÀú¸³¸ø×Ó¶ÔÏó£©
+------------->æ·±æ‹·è´ï¼ˆä½¿ç”¨é€’å½’ï¼‰--Aï¼ŒBæ“ä½œäº’ä¸æƒ³å¹²ï¼ˆæŠŠçˆ¶å¯¹è±¡ä¸­æ‰€æœ‰å±žäºŽå¯¹è±¡å±žæ€§ç±»åž‹éƒ½éåŽ†èµ‹ç»™å­å¯¹è±¡ï¼‰
 	var a = {
 		name:["zjb"],
 		age:20
@@ -61,33 +61,33 @@
 	b.name.push("zzz");
 	console.log(a.name);	
 
--------------------------------¶ÔÏó----------------------------------
-+Ò»ÇÐº¯Êý¶¼ÊÇº¯Êý¶ÔÏó£¬µ«¶ÔÏó²»Ò»¶¨ÊÇº¯Êý¡£
-	+var d = new Date();//ÊµÀý»¯ÈÕÆÚº¯Êý£¬Ô­ÐÍÁ´---£ºDate->object->null
-	+ var f = function(){};//ÉùÃ÷Ò»¸öº¯Êý¶ÔÏó  £¬Ô­ÐÍÁ´---£ºfunction->object->null
-	+ var nf = new f();//ÉùÃ÷Ò»¸ö¶ÔÏó£¬²¢Ö¸ÏòÊµÀý»¯º¯Êý¶ÔÏóµÄµØÖ· ----Ô­ÐÍÊÇ£ºobject£¬Ô­ÐÍÁ´---£ºobject->function->object-null
+-------------------------------å¯¹è±¡----------------------------------
++ä¸€åˆ‡å‡½æ•°éƒ½æ˜¯å‡½æ•°å¯¹è±¡ï¼Œä½†å¯¹è±¡ä¸ä¸€å®šæ˜¯å‡½æ•°ã€‚
+	+var d = new Date();//å®žä¾‹åŒ–æ—¥æœŸå‡½æ•°ï¼ŒåŽŸåž‹é“¾---ï¼šDate->object->null
+	+ var f = function(){};//å£°æ˜Žä¸€ä¸ªå‡½æ•°å¯¹è±¡  ï¼ŒåŽŸåž‹é“¾---ï¼šfunction->object->null
+	+ var nf = new f();//å£°æ˜Žä¸€ä¸ªå¯¹è±¡ï¼Œå¹¶æŒ‡å‘å®žä¾‹åŒ–å‡½æ•°å¯¹è±¡çš„åœ°å€ ----åŽŸåž‹æ˜¯ï¼šobjectï¼ŒåŽŸåž‹é“¾---ï¼šobject->function->object-null
 
-+ÄÚÖÃ¶ÔÏó£¨ObjectÊÇjsËùÓÐ¶ÔÏóµÄ¸¸¶ÔÏó£©
-	+Í¨¹ý×ÖÃæÁ¿´´½¨µÄ±äÁ¿ÔÚµ÷ÓÃÊôÐÔºÍ·½·¨Ê±»á±»¶ÔÏó°ü×°Æ÷ÔÝÊ±°ü×°³É¶ÔÏó£¬¾ßÓÐ¶ÔÏóµÄÐÔÖÊ¡£
-		+var str = ¡°ÎÒ²»ÊÇÕæµÄ¶ÔÏó¡±£»
++å†…ç½®å¯¹è±¡ï¼ˆObjectæ˜¯jsæ‰€æœ‰å¯¹è±¡çš„çˆ¶å¯¹è±¡ï¼‰
+	+é€šè¿‡å­—é¢é‡åˆ›å»ºçš„å˜é‡åœ¨è°ƒç”¨å±žæ€§å’Œæ–¹æ³•æ—¶ä¼šè¢«å¯¹è±¡åŒ…è£…å™¨æš‚æ—¶åŒ…è£…æˆå¯¹è±¡ï¼Œå…·æœ‰å¯¹è±¡çš„æ€§è´¨ã€‚
+		+var str = â€œæˆ‘ä¸æ˜¯çœŸçš„å¯¹è±¡â€ï¼›
 		+ typeof str =>String
-	+Í¨¹ýnew³öÀ´µÄ¶ÔÏóÊÇÕæ¶ÔÏó
-		+var str = new String("ÎÒÊÇÕæ¶ÔÏó");
+	+é€šè¿‡newå‡ºæ¥çš„å¯¹è±¡æ˜¯çœŸå¯¹è±¡
+		+var str = new String("æˆ‘æ˜¯çœŸå¯¹è±¡");
 		+typeof str =>Object
-	+È«¾Ö¶ÔÏó¡¢Number¡¢String¡¢Boolean¡¢Array¡¢Function¡¢Object¡¢Date¡¢Math¡¢
+	+å…¨å±€å¯¹è±¡ã€Numberã€Stringã€Booleanã€Arrayã€Functionã€Objectã€Dateã€Mathã€
 
-+´´½¨¶ÔÏóµÄ·½Ê½
-	1.¶ÔÏóµÄ×ÖÃæÁ¿´´½¨
-		var object = {name:"zjb",age:20};//ÊôÐÔÒÔ¼üÖµ¶ÔµÄÐÎÊ½´æÔÚ£¬²¢ÓÃ","¸ô¿ª£¬×îºóÒ»¸öÊôÐÔºó²»¼Ó","
++åˆ›å»ºå¯¹è±¡çš„æ–¹å¼
+	1.å¯¹è±¡çš„å­—é¢é‡åˆ›å»º
+		var object = {name:"zjb",age:20};//å±žæ€§ä»¥é”®å€¼å¯¹çš„å½¢å¼å­˜åœ¨ï¼Œå¹¶ç”¨","éš”å¼€ï¼Œæœ€åŽä¸€ä¸ªå±žæ€§åŽä¸åŠ ","
 		console.log(object.name);//zjb
-	2.Ê¹ÓÃfunctionÄ£ÄâÎÞ²Î¹¹Ôìº¯Êý
+	2.ä½¿ç”¨functionæ¨¡æ‹Ÿæ— å‚æž„é€ å‡½æ•°
 		function object(){};
 		var ob = new object();
 		ob.name = "zjb";
 		ob.age = 20;
 		on.show = function(){console.log(ob.name);}
 		on.show();//zjb
-	3.Ê¹ÓÃfunctionÄ£ÄâÓÐ²Î¹¹Ôìº¯Êý£¬this¹Ø¼ü×Ö¶¨Òå¹¹ÔìµÄÉÏÏÂÎÄÊôÐÔ
+	3.ä½¿ç”¨functionæ¨¡æ‹Ÿæœ‰å‚æž„é€ å‡½æ•°ï¼Œthiså…³é”®å­—å®šä¹‰æž„é€ çš„ä¸Šä¸‹æ–‡å±žæ€§
 		function object(){
 			this.name = "zjb";
 			this.age = 20;
@@ -95,72 +95,72 @@
 		}
 		var ob = new object();
 		ob.show();//zjb
-	4.Ê¹ÓÃ¹¤³§Ä£Ê½´´½¨¶ÔÏó(ÄÚÖÃ¶ÔÏó)
-		var ob = new Object();//ObjectÊÇjsÄÚÖÃ¶ÔÏó
+	4.ä½¿ç”¨å·¥åŽ‚æ¨¡å¼åˆ›å»ºå¯¹è±¡(å†…ç½®å¯¹è±¡)
+		var ob = new Object();//Objectæ˜¯jså†…ç½®å¯¹è±¡
 		ob.name = "zjb";
 		ob.show = function(){console.log(ob.name);}
 		on.show();//zjb
-	5.Ê¹ÓÃprototypeÔ­ÐÍ´´½¨¶ÔÏó  --------ËùÓÐµÄÊµÀý¶¼¹²ÏíÔ­ÐÍ¶ÔÏóÀïµÄÊôÐÔºÍ·½·¨
+	5.ä½¿ç”¨prototypeåŽŸåž‹åˆ›å»ºå¯¹è±¡  --------æ‰€æœ‰çš„å®žä¾‹éƒ½å…±äº«åŽŸåž‹å¯¹è±¡é‡Œçš„å±žæ€§å’Œæ–¹æ³•
 		function obj(){}
 		obj.prototype.name = "zjb";
 		obj.prototype.age = 20;
 		obj.prototype.show = function(){console.log(this.name)};
-	6.Ê¹ÓÃ¹¹ÔìºÍÔ­ÐÍ»ìºÏ´´½¨  -------¹¹Ôìº¯ÊýÓÃÓÚ¶¨ÒåÊµÀýÊôÐÔ£¬Ô­ÐÍÄ£Ê½ÓÃÓÚ¶¨Òå·½·¨ºÍ¹²ÏíÊôÐÔ¡£----Ê¹ÓÃ×î¹ã·º
+	6.ä½¿ç”¨æž„é€ å’ŒåŽŸåž‹æ··åˆåˆ›å»º  -------æž„é€ å‡½æ•°ç”¨äºŽå®šä¹‰å®žä¾‹å±žæ€§ï¼ŒåŽŸåž‹æ¨¡å¼ç”¨äºŽå®šä¹‰æ–¹æ³•å’Œå…±äº«å±žæ€§ã€‚----ä½¿ç”¨æœ€å¹¿æ³›
 		function obj(){
 			this.name = name;
 			this.age = age;
 		}
 		obj.prototype.show = function(){console.log(this.name)}
 
-+È«¾Ö¶ÔÏó£¨È«¾Ö¶ÔÏóÊÇÔ¤¶¨ÒåµÄ¶ÔÏó£¬×÷ÎªjsµÄÈ«¾Öº¯ÊýºÍÈ«¾ÖÊôÐÔµÄÕ¼Î»·û£©
-	+¶¥²ãº¯Êý£¨È«¾Öº¯Êý£©
-		+eval()£»¼ÆËãjs×Ö·û´®£¬²¢×÷Îª½Å±¾´úÂëÀ´Ö´ÐÐ¡£
-		+Number()£»°Ñ¶ÔÏóµÄÖµ×ª»»³ÉÊý×é£¬Ê§°Ü·µ»ØNaN£»
-		+isNaN()£»¼ì²éÊÇ·ñÎªÊý×Ö¡£
-		+parseInt()£»½âÎö×Ö·û´®·µ»ØÕûÊý
-		+parseFloat()£»½âÎö×Ö·û´®·µ»Ø¸¡µãÊý
-		+String()£»°Ñ¶ÔÏóµÄÖµ×ª»»³É×Ö·û´®
-	+¶¥²ãÊôÐÔ£¨È«¾ÖÊôÐÔ£©
-		+NaN£»Ö¸Ê¾Ä³¸öÖµÊÇ²»ÊÇÊý×Ö
-		+undefined£»Ö¸Ê¾Î´¶¨ÒåµÄÖµ----Ö»ÄÜ"==="À´ÅÐ¶ÏÖµÊÇ·ñÎ´¶¨Òå£¬"=="»áÄ¬ÈÏundefinedµÈÓÚnull
++å…¨å±€å¯¹è±¡ï¼ˆå…¨å±€å¯¹è±¡æ˜¯é¢„å®šä¹‰çš„å¯¹è±¡ï¼Œä½œä¸ºjsçš„å…¨å±€å‡½æ•°å’Œå…¨å±€å±žæ€§çš„å ä½ç¬¦ï¼‰
+	+é¡¶å±‚å‡½æ•°ï¼ˆå…¨å±€å‡½æ•°ï¼‰
+		+eval()ï¼›è®¡ç®—jså­—ç¬¦ä¸²ï¼Œå¹¶ä½œä¸ºè„šæœ¬ä»£ç æ¥æ‰§è¡Œã€‚
+		+Number()ï¼›æŠŠå¯¹è±¡çš„å€¼è½¬æ¢æˆæ•°ç»„ï¼Œå¤±è´¥è¿”å›žNaNï¼›
+		+isNaN()ï¼›æ£€æŸ¥æ˜¯å¦ä¸ºæ•°å­—ã€‚
+		+parseInt()ï¼›è§£æžå­—ç¬¦ä¸²è¿”å›žæ•´æ•°
+		+parseFloat()ï¼›è§£æžå­—ç¬¦ä¸²è¿”å›žæµ®ç‚¹æ•°
+		+String()ï¼›æŠŠå¯¹è±¡çš„å€¼è½¬æ¢æˆå­—ç¬¦ä¸²
+	+é¡¶å±‚å±žæ€§ï¼ˆå…¨å±€å±žæ€§ï¼‰
+		+NaNï¼›æŒ‡ç¤ºæŸä¸ªå€¼æ˜¯ä¸æ˜¯æ•°å­—
+		+undefinedï¼›æŒ‡ç¤ºæœªå®šä¹‰çš„å€¼----åªèƒ½"==="æ¥åˆ¤æ–­å€¼æ˜¯å¦æœªå®šä¹‰ï¼Œ"=="ä¼šé»˜è®¤undefinedç­‰äºŽnull
 
-+Êý×é(Array)¶ÔÏó£ºvar array = new Array();
-	+Ôö¼Ó---unshift()£»ÏòÊý×éµÄ¿ªÍ·Ôö¼ÓÒ»¸ö»ò¶à¸öÊý×é/push():ÏòÊý×éµÄÄ©Î»Ôö¼ÓÒ»¸ö»ò¶à¸öÊý¾Ý¡£---£¨·µ»ØÊý×é³¤¶È£©
-	+É¾³ý---shift()£»É¾³ýÊý×é¿ªÍ·Ò»¸öÔªËØ/pop():É¾³ýÊý×éµÄ×îºóÒ»¸öÔªËØ---£¨·µ»Ø¸ÃÔªËØ£©
-	+½ØÈ¡---slice(staindex,endindex)£»½ØÈ¡Ö¸¶¨·¶Î§Êý×é£¬·µ»Ø½ØÈ¡ºóµÄÊý×é¡££¨²»Ó°ÏìÔ­Êý×é£©
-	+Æ´½Ó---concat(param)£»Æ´½ÓÁ½¸öÊý×é£¬²¢·µ»ØÆ´½ÓºóµÄ×Ö·û´®£¬²ÎÊý¿ÉÒÔÎªÊý×Ö£¬×Ö·û´®£¬»òÕß»ìºÏ¡££¨²»Ó°ÏìÔ­Êý×é£©
-	+¸´ÖÆ---slice(0)/concat()£»·µ»Ø¸´ÖÆµÄÊý×é¡££¨²»Ó°ÏìÔ­Êý×é£©
-	+ÅÅÐò---sort()£»·µ»ØÅÅÐòºóÊý×é£¬(Ó°ÏìÔ­Êý×é)
-	+·´×ª---reverse()£»·´×ªÊý×é£¬(Ó°ÏìÔ­Êý×é)
-	+×Ö·û´®×ª»¯---join('param')£»ÒÔparamÎª·Ö¸ô·ûÆ´½Ó³É×Ö·û´®¡££¨²»Ó°ÏìÔ­Êý×é£©
-	+array.map(function);// Êý×éÖÐÃ¿Ò»¸öÔªËØµ÷ÓÃÖ¸¶¨·½·¨ºó·µ»ØÐÂµÄÊý×é¡£
++æ•°ç»„(Array)å¯¹è±¡ï¼švar array = new Array();
+	+å¢žåŠ ---unshift()ï¼›å‘æ•°ç»„çš„å¼€å¤´å¢žåŠ ä¸€ä¸ªæˆ–å¤šä¸ªæ•°ç»„/push():å‘æ•°ç»„çš„æœ«ä½å¢žåŠ ä¸€ä¸ªæˆ–å¤šä¸ªæ•°æ®ã€‚---ï¼ˆè¿”å›žæ•°ç»„é•¿åº¦ï¼‰
+	+åˆ é™¤---shift()ï¼›åˆ é™¤æ•°ç»„å¼€å¤´ä¸€ä¸ªå…ƒç´ /pop():åˆ é™¤æ•°ç»„çš„æœ€åŽä¸€ä¸ªå…ƒç´ ---ï¼ˆè¿”å›žè¯¥å…ƒç´ ï¼‰
+	+æˆªå–---slice(staindex,endindex)ï¼›æˆªå–æŒ‡å®šèŒƒå›´æ•°ç»„ï¼Œè¿”å›žæˆªå–åŽçš„æ•°ç»„ã€‚ï¼ˆä¸å½±å“åŽŸæ•°ç»„ï¼‰
+	+æ‹¼æŽ¥---concat(param)ï¼›æ‹¼æŽ¥ä¸¤ä¸ªæ•°ç»„ï¼Œå¹¶è¿”å›žæ‹¼æŽ¥åŽçš„å­—ç¬¦ä¸²ï¼Œå‚æ•°å¯ä»¥ä¸ºæ•°å­—ï¼Œå­—ç¬¦ä¸²ï¼Œæˆ–è€…æ··åˆã€‚ï¼ˆä¸å½±å“åŽŸæ•°ç»„ï¼‰
+	+å¤åˆ¶---slice(0)/concat()ï¼›è¿”å›žå¤åˆ¶çš„æ•°ç»„ã€‚ï¼ˆä¸å½±å“åŽŸæ•°ç»„ï¼‰
+	+æŽ’åº---sort()ï¼›è¿”å›žæŽ’åºåŽæ•°ç»„ï¼Œ(å½±å“åŽŸæ•°ç»„)
+	+åè½¬---reverse()ï¼›åè½¬æ•°ç»„ï¼Œ(å½±å“åŽŸæ•°ç»„)
+	+å­—ç¬¦ä¸²è½¬åŒ–---join('param')ï¼›ä»¥paramä¸ºåˆ†éš”ç¬¦æ‹¼æŽ¥æˆå­—ç¬¦ä¸²ã€‚ï¼ˆä¸å½±å“åŽŸæ•°ç»„ï¼‰
+	+array.map(function);// æ•°ç»„ä¸­æ¯ä¸€ä¸ªå…ƒç´ è°ƒç”¨æŒ‡å®šæ–¹æ³•åŽè¿”å›žæ–°çš„æ•°ç»„ã€‚
 
-+Math¶ÔÏó£¨²»ÊÇ¶ÔÏóµÄÀà£¬ËùÒÔÃ»ÓÐ¹¹Ôìº¯Êý£¬ËùÒÔ²»ÄÜnewÈ¥ÊµÀý»¯£©
-	+Math.max(...)£»ÔÚ¶à¸öÊý×ÖÖÐÈ¡×î´óÖµ
-	+Math.min(...)£»ÔÚ¶à¸öÊý×ÖÖÐÈ¡×îÐ¡Öµ
-	+Math.abs(x)£»·µ»Ø¾ø¶ÔÖµ
-	+Math.random(x)£»·µ»Ø0-1Ö®¼äµÄËæ»úÊý£¬0¿ÉÈ¡£¬1È¡²»µ½
-	+Math.round(x)£»ËÄÉáÎåÈë
-	+Math.ceil(x)£»ÏòÉÏÈ¡Õû
-	+Math.floor(x)£»ÏòÏÂÈ¡Õû
-	+Math.pow(x,y)£»¼ÆËãxµÄy´ÎÃÝ
++Mathå¯¹è±¡ï¼ˆä¸æ˜¯å¯¹è±¡çš„ç±»ï¼Œæ‰€ä»¥æ²¡æœ‰æž„é€ å‡½æ•°ï¼Œæ‰€ä»¥ä¸èƒ½newåŽ»å®žä¾‹åŒ–ï¼‰
+	+Math.max(...)ï¼›åœ¨å¤šä¸ªæ•°å­—ä¸­å–æœ€å¤§å€¼
+	+Math.min(...)ï¼›åœ¨å¤šä¸ªæ•°å­—ä¸­å–æœ€å°å€¼
+	+Math.abs(x)ï¼›è¿”å›žç»å¯¹å€¼
+	+Math.random(x)ï¼›è¿”å›ž0-1ä¹‹é—´çš„éšæœºæ•°ï¼Œ0å¯å–ï¼Œ1å–ä¸åˆ°
+	+Math.round(x)ï¼›å››èˆäº”å…¥
+	+Math.ceil(x)ï¼›å‘ä¸Šå–æ•´
+	+Math.floor(x)ï¼›å‘ä¸‹å–æ•´
+	+Math.pow(x,y)ï¼›è®¡ç®—xçš„yæ¬¡å¹‚
 
-+×Ö·û´®¶ÔÏó£ºvar str = new String()
-	+str.split()£»°Ñ×Ö·û´®·Ö¸î³ÉÊý×éµÄÐÎÊ½·µ»Ø
-	+str.replace()£»Ìæ´ú×Ö·û´®ÖÐµÄÄ³¸öÔªËØ£¬·µ»ØÌæ´úºóµÄ×Ö·û´®
-	+str.substring(start,end)£»½ØÈ¡Ö¸¶¨Ë÷Òý·¶Î§µÄ×Ö·û
-	+str.substr(strar,length)£»ÒÔÖ¸¶¨Ë÷ÒýÎª¿ªÊ¼£¬½ØÈ¡Ö¸¶¨³¤¶È×Ö·û
-	+str.concat()£»Æ´½Ó×Ö·û´®£¬Ð§¹ûºÍ"+"Ò»Ñù£¬Ò»°ãÊ¹ÓÃ¡°+¡±
-	+str.trim()£»È¥µô×Ö·û´®Ç°ºóµÄ¿Õ°×
-	+str.indexOf()£»·µ»ØÖ¸¶¨×Ö·û¶ÔÓ¦µÄË÷Òý£¬Èç¹ûÃ»ÓÐ·µ»Ø-1
++å­—ç¬¦ä¸²å¯¹è±¡ï¼švar str = new String()
+	+str.split()ï¼›æŠŠå­—ç¬¦ä¸²åˆ†å‰²æˆæ•°ç»„çš„å½¢å¼è¿”å›ž
+	+str.replace()ï¼›æ›¿ä»£å­—ç¬¦ä¸²ä¸­çš„æŸä¸ªå…ƒç´ ï¼Œè¿”å›žæ›¿ä»£åŽçš„å­—ç¬¦ä¸²
+	+str.substring(start,end)ï¼›æˆªå–æŒ‡å®šç´¢å¼•èŒƒå›´çš„å­—ç¬¦
+	+str.substr(strar,length)ï¼›ä»¥æŒ‡å®šç´¢å¼•ä¸ºå¼€å§‹ï¼Œæˆªå–æŒ‡å®šé•¿åº¦å­—ç¬¦
+	+str.concat()ï¼›æ‹¼æŽ¥å­—ç¬¦ä¸²ï¼Œæ•ˆæžœå’Œ"+"ä¸€æ ·ï¼Œä¸€èˆ¬ä½¿ç”¨â€œ+â€
+	+str.trim()ï¼›åŽ»æŽ‰å­—ç¬¦ä¸²å‰åŽçš„ç©ºç™½
+	+str.indexOf()ï¼›è¿”å›žæŒ‡å®šå­—ç¬¦å¯¹åº”çš„ç´¢å¼•ï¼Œå¦‚æžœæ²¡æœ‰è¿”å›ž-1
 
---------------------------±äÁ¿ºÍº¯ÊýµÄÌáÉý--------------------------------
+--------------------------å˜é‡å’Œå‡½æ•°çš„æå‡--------------------------------
 
-+º¯ÊýµÄÌáÉý£º
-	+Ö»ÌáÉýº¯ÊýµÄÉùÃ÷£¬²»ÌáÉýº¯ÊýµÄ¶¨Òå
-	+º¯ÊýµÄÉùÃ÷£ºfunction aa(){};  ----ÕûÌåÌáÉýµ½×÷ÓÃÓòµÄ×î¶¥²¿£¬
-	+º¯ÊýµÄ¶¨Òå£ºvar aa = function(){}; ----var aa;ÌáÉýµ½×÷ÓÃÓòµÄ×î¶¥²¿£¬function(){};ÔÚÔ­À´Î»ÖÃ
-Example£º
++å‡½æ•°çš„æå‡ï¼š
+	+åªæå‡å‡½æ•°çš„å£°æ˜Žï¼Œä¸æå‡å‡½æ•°çš„å®šä¹‰
+	+å‡½æ•°çš„å£°æ˜Žï¼šfunction aa(){};  ----æ•´ä½“æå‡åˆ°ä½œç”¨åŸŸçš„æœ€é¡¶éƒ¨ï¼Œ
+	+å‡½æ•°çš„å®šä¹‰ï¼švar aa = function(){}; ----var aa;æå‡åˆ°ä½œç”¨åŸŸçš„æœ€é¡¶éƒ¨ï¼Œfunction(){};åœ¨åŽŸæ¥ä½ç½®
+Exampleï¼š
 	console.log(a1);
 	console.log(a2);
 	function a1(){
@@ -169,49 +169,49 @@ Example£º
 	var a2 = function(){
 		console.log(a2);
 	}
-//Êä³öº¯Êýa1£¬ºÍundefined
-µÈ¼ÛÓÚ£º
+//è¾“å‡ºå‡½æ•°a1ï¼Œå’Œundefined
+ç­‰ä»·äºŽï¼š
 	function a1(){
 		console.log(a1);
 	}
-	var a2;   //º¯ÊýµÄÌáÉý»áÓÅÏÈÓÚ±äÁ¿
+	var a2;   //å‡½æ•°çš„æå‡ä¼šä¼˜å…ˆäºŽå˜é‡
 	console.log(a1);
 	console.log(a2);
 	function(){
 		console.log(a2);	
 	}
-ES6¹æ¶¨£¬ÔÚ¿é¼¶×÷ÓÃÓòÖÐ£¬º¯ÊýÉùÃ÷µÄÐÐÎªÀàËÆÓÚlet£¬ÔÚ¿é¼¶×÷ÓÃÓòÖ®Íâ²»¿ÉÒýÓÃ¡£
-ES6ÖÐ£¬º¯ÊýÉùÃ÷»áÌáÉýµ½º¯Êý×÷ÓÃÓòµÄÍ·²¿¡£
-ES6µÄ¿é¼¶×÷ÓÃÓòÔÊÐíÉùÃ÷º¯ÊýÖ»ÔÚÊ¹ÓÃ´óÀ¨ºÅµÄÇé¿öÏÂ³ÉÁ¢£¬Èç¹ûÎ´Ê¹ÓÃ´óÀ¨ºÅ£¬»á±¨´í¡£
+ES6è§„å®šï¼Œåœ¨å—çº§ä½œç”¨åŸŸä¸­ï¼Œå‡½æ•°å£°æ˜Žçš„è¡Œä¸ºç±»ä¼¼äºŽletï¼Œåœ¨å—çº§ä½œç”¨åŸŸä¹‹å¤–ä¸å¯å¼•ç”¨ã€‚
+ES6ä¸­ï¼Œå‡½æ•°å£°æ˜Žä¼šæå‡åˆ°å‡½æ•°ä½œç”¨åŸŸçš„å¤´éƒ¨ã€‚
+ES6çš„å—çº§ä½œç”¨åŸŸå…è®¸å£°æ˜Žå‡½æ•°åªåœ¨ä½¿ç”¨å¤§æ‹¬å·çš„æƒ…å†µä¸‹æˆç«‹ï¼Œå¦‚æžœæœªä½¿ç”¨å¤§æ‹¬å·ï¼Œä¼šæŠ¥é”™ã€‚
 
-+±äÁ¿µÄÌáÉý£º
-	+ a= "a";µÈ¼ÛÓÚwindow.a = "a";  ÒþÊ½È«¾Ö±äÁ¿=ÏÔÊ½È«¾Ö±äÁ¿£»Èç¹ûÓÃ´Ë·½·¨¶¨ÒåÈ«¾Ö±äÁ¿²»ÄÜÔÙ´Ë±äÁ¿Ö®Ç°½øÐÐÊä³ö¡£
-		+È«¾Ö±äÁ¿²»ÊÜ×÷ÓÃÓòµÄÏÞÖÆ
-	+ var a = "a"; ±äÁ¿µÄÉùÃ÷var a£»ÉùÃ÷»áÌáÉýµ½Æä×÷ÓÃÓòµÄ¶¥²¿£¬²»ÊÜ¿é¼¶×÷ÓÃÓòÏÞÖÆ¡£¿ÉÖØ¸´ÉùÃ÷¸³Öµ£¬ÖµÒÔ×î½üÔ­ÔòÎª×¼¡£
-	+ let a  = "a"; ±äÁ¿µÄÉùÃ÷let a£»²»»áÌáÉý£¬´ôÔÚÔ­µØ¡£ÊÜ¿é¼¶×÷ÓÃÓòºÍº¯Êý×÷ÓÃÓò¡£²»¿ÉÖØ¸´ÉùÃ÷¡£
++å˜é‡çš„æå‡ï¼š
+	+ a= "a";ç­‰ä»·äºŽwindow.a = "a";  éšå¼å…¨å±€å˜é‡=æ˜¾å¼å…¨å±€å˜é‡ï¼›å¦‚æžœç”¨æ­¤æ–¹æ³•å®šä¹‰å…¨å±€å˜é‡ä¸èƒ½å†æ­¤å˜é‡ä¹‹å‰è¿›è¡Œè¾“å‡ºã€‚
+		+å…¨å±€å˜é‡ä¸å—ä½œç”¨åŸŸçš„é™åˆ¶
+	+ var a = "a"; å˜é‡çš„å£°æ˜Žvar aï¼›å£°æ˜Žä¼šæå‡åˆ°å…¶ä½œç”¨åŸŸçš„é¡¶éƒ¨ï¼Œä¸å—å—çº§ä½œç”¨åŸŸé™åˆ¶ã€‚å¯é‡å¤å£°æ˜Žèµ‹å€¼ï¼Œå€¼ä»¥æœ€è¿‘åŽŸåˆ™ä¸ºå‡†ã€‚
+	+ let a  = "a"; å˜é‡çš„å£°æ˜Žlet aï¼›ä¸ä¼šæå‡ï¼Œå‘†åœ¨åŽŸåœ°ã€‚å—å—çº§ä½œç”¨åŸŸå’Œå‡½æ•°ä½œç”¨åŸŸã€‚ä¸å¯é‡å¤å£°æ˜Žã€‚
 
-----------------------------------×÷ÓÃÓò-------------------------------------
+----------------------------------ä½œç”¨åŸŸ-------------------------------------
 
-+×÷ÓÃÓò
-	+ES5ÖÐÃ»ÓÐ¿é¼¶×÷ÓÃÓòµÄ¸ÅÄî£¬Ö»ÓÐÈ«¾Ö×÷ÓÃÓòºÍº¯Êý×÷ÓÃÓò¡£
-	+ES6ÖÐÐÂÔöÁË¿é¼¶×÷ÓÃÓò£¬²¢¶¨ÒåÁËlet¹Ø¼ü×Ö£¬ÉùÃ÷²»»á±»ÌáÉý£¬ÊÜ¿é¼¶×÷ÓÃÓòÓ°Ïì¡£
-Example£º
++ä½œç”¨åŸŸ
+	+ES5ä¸­æ²¡æœ‰å—çº§ä½œç”¨åŸŸçš„æ¦‚å¿µï¼Œåªæœ‰å…¨å±€ä½œç”¨åŸŸå’Œå‡½æ•°ä½œç”¨åŸŸã€‚
+	+ES6ä¸­æ–°å¢žäº†å—çº§ä½œç”¨åŸŸï¼Œå¹¶å®šä¹‰äº†letå…³é”®å­—ï¼Œå£°æ˜Žä¸ä¼šè¢«æå‡ï¼Œå—å—çº§ä½œç”¨åŸŸå½±å“ã€‚
+Exampleï¼š
 	(function f1(){
 		console.log(a);//undefined
-		console.log(b);//±¨´í
+		console.log(b);//æŠ¥é”™
 		{
 			let b = "b";
 			var a = "a";
 		}
 		console.log(a);//a
-		console.log(b);//±¨´í
+		console.log(b);//æŠ¥é”™
 	})();
 
-+×÷ÓÃÓòÁ´
-	+È«¾Öº¯ÊýÎÞ·¨²é¿´¾Ö²¿º¯ÊýµÄÄÚ²¿Ï¸½Ú£¬µ«¾Ö²¿º¯Êý¿ÉÒÔ²é¿´ÆäÉÏ²ãµÄº¯ÊýÏ¸½Ú£¬Ö±ÖÁÈ«¾ÖÏ¸½Ú¡£
-	+µ±ÐèÒª´Ó¾Ö²¿º¯Êý²éÕÒÄ³Ò»ÊôÐÔ»òÕß·½·¨Ê±£¬Èç¹ûµ±Ç°×÷ÓÃÓòÃ»ÓÐÕÒµ½£¬¾Í»áÉÏËÝµ½ÉÏ²ã×÷ÓÃÓò²éÕÒ£¬Ö±ÖÁÈ«¾Ö×÷ÓÃÓò£¬ÕâÖÖ×éÖ¯ÐÎ		Ê½¾ÍÊÇ×÷ÓÃÓòÁ´¡£
++ä½œç”¨åŸŸé“¾
+	+å…¨å±€å‡½æ•°æ— æ³•æŸ¥çœ‹å±€éƒ¨å‡½æ•°çš„å†…éƒ¨ç»†èŠ‚ï¼Œä½†å±€éƒ¨å‡½æ•°å¯ä»¥æŸ¥çœ‹å…¶ä¸Šå±‚çš„å‡½æ•°ç»†èŠ‚ï¼Œç›´è‡³å…¨å±€ç»†èŠ‚ã€‚
+	+å½“éœ€è¦ä»Žå±€éƒ¨å‡½æ•°æŸ¥æ‰¾æŸä¸€å±žæ€§æˆ–è€…æ–¹æ³•æ—¶ï¼Œå¦‚æžœå½“å‰ä½œç”¨åŸŸæ²¡æœ‰æ‰¾åˆ°ï¼Œå°±ä¼šä¸Šæº¯åˆ°ä¸Šå±‚ä½œç”¨åŸŸæŸ¥æ‰¾ï¼Œç›´è‡³å…¨å±€ä½œç”¨åŸŸï¼Œè¿™ç§ç»„ç»‡å½¢		å¼å°±æ˜¯ä½œç”¨åŸŸé“¾ã€‚
 
-Example£º	
+Exampleï¼š	
 	var a = 10;
 	function f1(){
 		console.log(a);
@@ -220,7 +220,7 @@ Example£º
 		var a = 20;
 		f1();
 	}
-	f2();//10£»
+	f2();//10ï¼›
 -----------------
 	var a = 10;
 	function f2(){
@@ -228,38 +228,38 @@ Example£º
 		function f1(){
 			console.log(a);
 		}
-		f1();//20£»
+		f1();//20ï¼›
 	}
 	f2();
 
-------------------------------------±Õ°ü---------------------------
+------------------------------------é—­åŒ…---------------------------
 
-+±Õ°ü
-	+ÄÜ¹»¶ÁÈ¡ÆäËûº¯ÊýÄÚ²¿±äÁ¿µÄº¯Êý¡£×î³£¼ûµÄ±Õ°ü¾ÍÊÇº¯ÊýÄÚ´´½¨ÁíÒ»¸öº¯Êý£¬Í¨¹ýÁíÒ»¸öº¯Êý·ÃÎÊÕâ¸öº¯ÊýµÄ¾Ö²¿±äÁ¿£¬ÀûÓÃ±Õ°ü¿ÉÒÔÍ»ÆÆ×÷ÓÃÓòÁ´£¬½«º¯ÊýÄÚ²¿µÄ±äÁ¿ºÍ·½·¨´«µÝµ½Íâ²¿¡£
-ÌØÕ÷£º
-	1.ÔÚº¯ÊýÄÚ²¿¶¨ÒåÒ»¸öº¯Êý£¨Í¨¹ý·µ»ØÄÚ²¿º¯ÊýÃû£¬µ÷ÓÃÊµÀý»¯µÄÍâ²¿º¯Êý£¬À´¶ÁÈ¡ÄÚ²¿º¯ÊýµÄ±äÁ¿£©
-	2.¿ÉÒÔ¶ÁÈ¡ÄÚ²¿º¯ÊýµÄ±äÁ¿
-	3.ÒòÎª±Õ°ü°üº¬Ëü·ÃÎÊµÄº¯ÊýµÄ×÷ÓÃÓò£¬»òµ¼ÖÂÕ¼ÓÃÄÚ´æ¸ü´ó£¬²¢ÇÒ±Õ°üÄÚµÄÊôÐÔ²»»á±»»ØÊÕ¡£
-ÓÅµã£º	¿ÉÒÔ·ÃÎÊË½ÓÐ±äÁ¿ºÍË½ÓÐº¯Êý¡£
-È±µã£º
-	1.Ôì³ÉÄÚ´æÏûºÄ¹ý´ó
-	2.Ôì³ÉÍøÒ³·ÃÎÊÐÔÄÜÎÊÌâ¡£
-Example£º
++é—­åŒ…
+	+èƒ½å¤Ÿè¯»å–å…¶ä»–å‡½æ•°å†…éƒ¨å˜é‡çš„å‡½æ•°ã€‚æœ€å¸¸è§çš„é—­åŒ…å°±æ˜¯å‡½æ•°å†…åˆ›å»ºå¦ä¸€ä¸ªå‡½æ•°ï¼Œé€šè¿‡å¦ä¸€ä¸ªå‡½æ•°è®¿é—®è¿™ä¸ªå‡½æ•°çš„å±€éƒ¨å˜é‡ï¼Œåˆ©ç”¨é—­åŒ…å¯ä»¥çªç ´ä½œç”¨åŸŸé“¾ï¼Œå°†å‡½æ•°å†…éƒ¨çš„å˜é‡å’Œæ–¹æ³•ä¼ é€’åˆ°å¤–éƒ¨ã€‚
+ç‰¹å¾ï¼š
+	1.åœ¨å‡½æ•°å†…éƒ¨å®šä¹‰ä¸€ä¸ªå‡½æ•°ï¼ˆé€šè¿‡è¿”å›žå†…éƒ¨å‡½æ•°åï¼Œè°ƒç”¨å®žä¾‹åŒ–çš„å¤–éƒ¨å‡½æ•°ï¼Œæ¥è¯»å–å†…éƒ¨å‡½æ•°çš„å˜é‡ï¼‰
+	2.å¯ä»¥è¯»å–å†…éƒ¨å‡½æ•°çš„å˜é‡
+	3.å› ä¸ºé—­åŒ…åŒ…å«å®ƒè®¿é—®çš„å‡½æ•°çš„ä½œç”¨åŸŸï¼Œæˆ–å¯¼è‡´å ç”¨å†…å­˜æ›´å¤§ï¼Œå¹¶ä¸”é—­åŒ…å†…çš„å±žæ€§ä¸ä¼šè¢«å›žæ”¶ã€‚
+ä¼˜ç‚¹ï¼š	å¯ä»¥è®¿é—®ç§æœ‰å˜é‡å’Œç§æœ‰å‡½æ•°ã€‚
+ç¼ºç‚¹ï¼š
+	1.é€ æˆå†…å­˜æ¶ˆè€—è¿‡å¤§
+	2.é€ æˆç½‘é¡µè®¿é—®æ€§èƒ½é—®é¢˜ã€‚
+Exampleï¼š
 	function a(){
 		var num = 66;
 		var b = function(){
 			console.log(num);
 		}
 		num++;
-		return b;//·µ»Øº¯ÊýbµÄÒýÓÃ£¬²¢²»ÊÇ·µ»Ø¾ßÌåµÄnumÖµ
+		return b;//è¿”å›žå‡½æ•°bçš„å¼•ç”¨ï¼Œå¹¶ä¸æ˜¯è¿”å›žå…·ä½“çš„numå€¼
 	}
-	var c = a();//¶¨ÒåÒ»¸öÒýÓÃc£¬ÓÃÀ´½ÓÊÕº¯ÊýaÀïµÄÄÚ²¿º¯Êýb£¬¾ÍÊÇÓÃÒýÓÃcÀ´½ÓÊÜÒýÓÃb£¬²»¹ý´Ë¿ÌnumµÄÖµÒÑ¾­±»¸Ä±ä
+	var c = a();//å®šä¹‰ä¸€ä¸ªå¼•ç”¨cï¼Œç”¨æ¥æŽ¥æ”¶å‡½æ•°aé‡Œçš„å†…éƒ¨å‡½æ•°bï¼Œå°±æ˜¯ç”¨å¼•ç”¨cæ¥æŽ¥å—å¼•ç”¨bï¼Œä¸è¿‡æ­¤åˆ»numçš„å€¼å·²ç»è¢«æ”¹å˜
 	c();//67
 
-//±Õ°ü¾­µäÌâ£¡£¡£¡
+//é—­åŒ…ç»å…¸é¢˜ï¼ï¼ï¼
 	function test(){
 		var array = new Array();
-		for(var i=0;i<10;i++){//ÉùÃ÷µÄi»áÌáÉý£¬ËùÒÔi=10
+		for(var i=0;i<10;i++){//å£°æ˜Žçš„iä¼šæå‡ï¼Œæ‰€ä»¥i=10
 			array[i] = function(){
 				return i;
 			}
@@ -271,44 +271,44 @@ Example£º
 		console.log(t[i]());
 	}
 
-----------------------------------------Ô­ÐÍ¡¢Ô­ÐÍÁ´-------------------------------
+----------------------------------------åŽŸåž‹ã€åŽŸåž‹é“¾-------------------------------
 
-+Ô­ÐÍ£º
-	+ Ô­ÐÍ£¨prototype£©ÊÇÒ»¸ö¶ÔÏó£¬×Ô´øÊôÐÔ£¨constructor--¹¹ÔìÆ÷£©£¬ÆäËû¶ÔÏó¿ÉÒÔÍ¨¹ýÔ­ÐÍ¼Ì³Ð¸Ã¶ÔÏóµÄÊôÐÔ¡£
-	+ ¿ÉÒÔÔÚÔ­ÐÍ¶ÔÏóÄÚÌí¼Ó£¬ÖØÐ´Ô­ÐÍµÄ·½·¨¡£
-	+ prototypeÊÇº¯Êý²ÅÓÐµÄÊôÐÔ¡¢_proto_ÊÇÃ¿¸ö¶ÔÏó¶¼ÓÐµÄÊôÐÔ£¬µ«__proto__²»ÊÇÒ»¸ö¹æ·¶ÊôÐÔ£¬Ö»ÊÇ²¿·Öä¯ÀÀÆ÷ÊµÏÖµÄÊôÐÔ¡£
-	+ __proto__¿ÉÒÔ²é¿´¸¸¶ÔÏóµÄÔ­ÐÍ¡£Object.__proto__==null£» Function.__proto__ = Object.prototype;
-+Ô­ÐÍÁ´£º
-	+ Ò»¸ö¶ÔÏó¼Ì³ÐÓÚÁíÒ»¸ö¶ÔÏóÔ­ÐÍµÄÊôÐÔ»ò·½·¨£¬¶øÁíÒ»¸ö¶ÔÏóÒ²Í¬Ñù¼Ì³ÐÓÚÉÏÒ»¼¶µÄÔ­ÐÍ£¬¶øÏÂ¼¶¶ÔÏóÄÜ¹»ÏíÓÐÉÏ¼¶¶ÔÏóËùÓÐµÄÔ­ÐÍÊôÐÔ»ò·½·¨£¬ÕâÖÖÁ´½Ó·½Ê½¾Í½Ð×öÔ­ÐÍÁ´¡£
-	+ Èç¹û²»´æÔÚÒªÊ¹ÓÃµÄÊôÐÔ£¬Ôò»áÔÚÔ­ÐÍÁ´ÖÐ²éÕÒ£¬µ«²¢²»ÊÇ²éÕÒµ½ÉÏ¼¶¶ÔÏóµÄ¾²Ì¬ÊôÐÔ¡£Ö»¿É²éÕÒÔ­ÐÍÁ´ÖÐ¶¨ÒåµÄÊôÐÔ»ò·½·¨¡£  
-	+ hasOwnProperty£ºÅÐ¶Ï¶ÔÏóÊÇ·ñ°üº¬×ÔÉíÊôÐÔ¶ø²»ÊÇÔ­ÐÍÁ´ÉÏµÄÊôÐÔ¡£  object.hasOwnProperty(param);//´æÔÚ->true
-	+constructorÊ¼ÖÕÖ¸Ïò´´½¨µ±Ç°¶ÔÏóµÄ¹¹Ôìº¯Êý
++åŽŸåž‹ï¼š
+	+ åŽŸåž‹ï¼ˆprototypeï¼‰æ˜¯ä¸€ä¸ªå¯¹è±¡ï¼Œè‡ªå¸¦å±žæ€§ï¼ˆconstructor--æž„é€ å™¨ï¼‰ï¼Œå…¶ä»–å¯¹è±¡å¯ä»¥é€šè¿‡åŽŸåž‹ç»§æ‰¿è¯¥å¯¹è±¡çš„å±žæ€§ã€‚
+	+ å¯ä»¥åœ¨åŽŸåž‹å¯¹è±¡å†…æ·»åŠ ï¼Œé‡å†™åŽŸåž‹çš„æ–¹æ³•ã€‚
+	+ prototypeæ˜¯å‡½æ•°æ‰æœ‰çš„å±žæ€§ã€_proto_æ˜¯æ¯ä¸ªå¯¹è±¡éƒ½æœ‰çš„å±žæ€§ï¼Œä½†__proto__ä¸æ˜¯ä¸€ä¸ªè§„èŒƒå±žæ€§ï¼Œåªæ˜¯éƒ¨åˆ†æµè§ˆå™¨å®žçŽ°çš„å±žæ€§ã€‚
+	+ __proto__å¯ä»¥æŸ¥çœ‹çˆ¶å¯¹è±¡çš„åŽŸåž‹ã€‚Object.__proto__==nullï¼› Function.__proto__ = Object.prototype;
++åŽŸåž‹é“¾ï¼š
+	+ ä¸€ä¸ªå¯¹è±¡ç»§æ‰¿äºŽå¦ä¸€ä¸ªå¯¹è±¡åŽŸåž‹çš„å±žæ€§æˆ–æ–¹æ³•ï¼Œè€Œå¦ä¸€ä¸ªå¯¹è±¡ä¹ŸåŒæ ·ç»§æ‰¿äºŽä¸Šä¸€çº§çš„åŽŸåž‹ï¼Œè€Œä¸‹çº§å¯¹è±¡èƒ½å¤Ÿäº«æœ‰ä¸Šçº§å¯¹è±¡æ‰€æœ‰çš„åŽŸåž‹å±žæ€§æˆ–æ–¹æ³•ï¼Œè¿™ç§é“¾æŽ¥æ–¹å¼å°±å«åšåŽŸåž‹é“¾ã€‚
+	+ å¦‚æžœä¸å­˜åœ¨è¦ä½¿ç”¨çš„å±žæ€§ï¼Œåˆ™ä¼šåœ¨åŽŸåž‹é“¾ä¸­æŸ¥æ‰¾ï¼Œä½†å¹¶ä¸æ˜¯æŸ¥æ‰¾åˆ°ä¸Šçº§å¯¹è±¡çš„é™æ€å±žæ€§ã€‚åªå¯æŸ¥æ‰¾åŽŸåž‹é“¾ä¸­å®šä¹‰çš„å±žæ€§æˆ–æ–¹æ³•ã€‚  
+	+ hasOwnPropertyï¼šåˆ¤æ–­å¯¹è±¡æ˜¯å¦åŒ…å«è‡ªèº«å±žæ€§è€Œä¸æ˜¯åŽŸåž‹é“¾ä¸Šçš„å±žæ€§ã€‚  object.hasOwnProperty(param);//å­˜åœ¨->true
+	+constructorå§‹ç»ˆæŒ‡å‘åˆ›å»ºå½“å‰å¯¹è±¡çš„æž„é€ å‡½æ•°
 
 ----------------------------------------call/apply/bind----------------------------------------------
 
-+ obj.call(thisobj,arg1,arg2...)£»  
-+ obj.apply(thisobj,[arg1,arg2...])£»
-+ obj.bind(thisobj,arg1,arg2...)£»
-	+ Á½Õß·½·¨Ò»Ñù£¬¶¼ÊÇ°Ñobj(¼´this)°ó¶¨µ½thisobj£¬ÕâÊ±ºòthisobj¾ß±¸£¨¼Ì³Ð£©objµÄÊôÐÔºÍ·½·¨£¬°ó¶¨ºó»áÁ¢¼´Ö´ÐÐº¯Êý¡£
-	+ call½ÓÊÜÁ¬Ðø²ÎÊý£¬apply½ÓÊÜÊý×é²ÎÊý£¬bind½ÓÊÜÁ¬Ðø²ÎÊý£¬bind°ó¶¨ºó²»Á¢¼´Ö´ÐÐ¡£
++ obj.call(thisobj,arg1,arg2...)ï¼›  
++ obj.apply(thisobj,[arg1,arg2...])ï¼›
++ obj.bind(thisobj,arg1,arg2...)ï¼›
+	+ ä¸¤è€…æ–¹æ³•ä¸€æ ·ï¼Œéƒ½æ˜¯æŠŠobj(å³this)ç»‘å®šåˆ°thisobjï¼Œè¿™æ—¶å€™thisobjå…·å¤‡ï¼ˆç»§æ‰¿ï¼‰objçš„å±žæ€§å’Œæ–¹æ³•ï¼Œç»‘å®šåŽä¼šç«‹å³æ‰§è¡Œå‡½æ•°ã€‚
+	+ callæŽ¥å—è¿žç»­å‚æ•°ï¼ŒapplyæŽ¥å—æ•°ç»„å‚æ•°ï¼ŒbindæŽ¥å—è¿žç»­å‚æ•°ï¼Œbindç»‘å®šåŽä¸ç«‹å³æ‰§è¡Œã€‚
 
---------------------------------------new×öÁËÊ²Ã´---------------------------------------
+--------------------------------------newåšäº†ä»€ä¹ˆ---------------------------------------
 
 var cat = new Cat();
 	
-	var obj = {};//ÐÂ½¨Ò»¸ö¿Õ°×¶ÔÏó
-	obj.__proto__ = Cat.prototype;//¶ÔÏóµÄÔ­ÐÍÖ¸Ïò¹¹Ôìº¯ÊýµÄÔ­ÐÍ
-	Cat.call(obj);//¸Ä±ä¹¹Ôìº¯ÊýÄÚ²¿µÄthisÖ¸Ïò
+	var obj = {};//æ–°å»ºä¸€ä¸ªç©ºç™½å¯¹è±¡
+	obj.__proto__ = Cat.prototype;//å¯¹è±¡çš„åŽŸåž‹æŒ‡å‘æž„é€ å‡½æ•°çš„åŽŸåž‹
+	Cat.call(obj);//æ”¹å˜æž„é€ å‡½æ•°å†…éƒ¨çš„thisæŒ‡å‘
 
---------------------------------------thisµÄÀí½â-----------------------------------
+--------------------------------------thisçš„ç†è§£-----------------------------------
 
-1.thisÓÀÔ¶Ö¸Ïò×îºóµ÷ÓÃËüµÄ¶ÔÏó£¨ÎÞÂÛÓÐÃ»ÓÐthisÒªµÄ¶«Î÷£©
-2.Èç¹ûÓÐnew¹Ø¼ü×Ö£¬thisÖ¸Ïònew³öÀ´µÄ¶ÔÏó
-3.ÔÚÊÂ¼þÖÐ£¬thisÖ¸Ïò´¥·¢Õâ¸öÊÂ¼þµÄ¶ÔÏó£¬ÌØÊâµÄÊÇÔÚIEÖÐattachEventÖÐµÄthisÖ¸ÏòÈ«¾Ö¶ÔÏówindow
+1.thisæ°¸è¿œæŒ‡å‘æœ€åŽè°ƒç”¨å®ƒçš„å¯¹è±¡ï¼ˆæ— è®ºæœ‰æ²¡æœ‰thisè¦çš„ä¸œè¥¿ï¼‰
+2.å¦‚æžœæœ‰newå…³é”®å­—ï¼ŒthisæŒ‡å‘newå‡ºæ¥çš„å¯¹è±¡
+3.åœ¨äº‹ä»¶ä¸­ï¼ŒthisæŒ‡å‘è§¦å‘è¿™ä¸ªäº‹ä»¶çš„å¯¹è±¡ï¼Œç‰¹æ®Šçš„æ˜¯åœ¨IEä¸­attachEventä¸­çš„thisæŒ‡å‘å…¨å±€å¯¹è±¡window
 
---------------------nullºÍundefinedÇø±ð-------------------------
-1.nullºÍundefined¶¼ÊÇ»ù±¾Êý¾ÝÀàÐÍ£¬ÆäÖµÎª±¾Éí¡£
-2.null±íÊ¾Ò»¸ö¶ÔÏóÃ»ÓÐÖµ£¬¼´ÖµÎªnull¡£undefined±íÊ¾Ò»¸ö±äÁ¿ÉùÃ÷ºóÎ´±»¸³Öµ¡£
-3. typeof null==object // typeof undefined = undefined --- nullÊÇÒ»¸ö¶ÔÏó£¬Ã»ÓÐÊôÐÔºÍ·½·¨£¬undefinedÊÇÔ­Ê¼Öµ¡£
-4.±È½ÏnullºÍundefinedÊ±ÒªÓÃºãµÈÊ½¡°===¡±£¬²»ÄÜÓÃ¡°==¡±£¬ºãµÈÊ½Ê×ÏÈÅÐ¶ÏÊý¾ÝÀàÐÍÊÇ·ñÏàµÈ¡£ 
+--------------------nullå’ŒundefinedåŒºåˆ«-------------------------
+1.nullå’Œundefinedéƒ½æ˜¯åŸºæœ¬æ•°æ®ç±»åž‹ï¼Œå…¶å€¼ä¸ºæœ¬èº«ã€‚
+2.nullè¡¨ç¤ºä¸€ä¸ªå¯¹è±¡æ²¡æœ‰å€¼ï¼Œå³å€¼ä¸ºnullã€‚undefinedè¡¨ç¤ºä¸€ä¸ªå˜é‡å£°æ˜ŽåŽæœªè¢«èµ‹å€¼ã€‚
+3. typeof null==object // typeof undefined = undefined --- nullæ˜¯ä¸€ä¸ªå¯¹è±¡ï¼Œæ²¡æœ‰å±žæ€§å’Œæ–¹æ³•ï¼Œundefinedæ˜¯åŽŸå§‹å€¼ã€‚
+4.æ¯”è¾ƒnullå’Œundefinedæ—¶è¦ç”¨æ’ç­‰å¼â€œ===â€ï¼Œä¸èƒ½ç”¨â€œ==â€ï¼Œæ’ç­‰å¼é¦–å…ˆåˆ¤æ–­æ•°æ®ç±»åž‹æ˜¯å¦ç›¸ç­‰ã€‚ 
 
