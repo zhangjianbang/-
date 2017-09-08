@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		/*function maopao(){
+			var array = new Array(2,1,5,4,3,0);
+			for(var i=0;i<array.length;i++){
+				for(var j=i;j<array.length;j++){
+					if(array[i]>array[j]){
+						let sum = array[j];
+						array[j] = array[i];
+						array[i] = sum;
+					}
+				}
+			}
+			console.log("冒泡排序："+array);
+		}
+		//maopao();//冒泡排序*/
+
+		//--------------------------快速排序
+		/*function quickSort(array,l,r){
+			if(l<r){
+				var i=l,j=r,x=array[i];
+				while(i<j){
+					while(i<j&&array[j]>x){
+						j--;
+					}
+					if(i<j){
+						array[i++] = array[j];
+					}
+					while(i<j&&array[i]<x){
+						i++;
+					}
+					if(i<j){
+						array[j--] = array[i];
+					}
+				}
+				array[i] = x;
+				console.log(i+","+j);
+				quickSort(array,l,i-1);
+				quickSort(array,i+1,r);
+			}
+
+		}
+		function ks(){
+			array = new Array(2,1,5,4,3,0);
+			console.log(array);
+			quickSort(array,0,array.length-1);
+			console.log(array);
+		}
+		//ks();//快速排序*/
+
+		//-------------------------二路归并排序
+		/*function merge(left,right){
+			var result = [];
+			il = 0;
+			ir = 0;
+			while(il<left.length&&ir<right.length){
+				if(left[il]<right[ir]){
+					result.push(left[il++]);
+				}else{
+					result.push(right[ir++]);
+				}
+			}
+			while(left[il]){
+				result.push(left[il++]);
+			}
+			while(right[ir]){
+				result.push(right[ir++]);
+			}	
+			return result;
+		}
+		function ergui(){
+			var left = new Array(1,2,3,4,5);
+			var right = new Array(2,3,4,5,6);
+			var result = merge(left,right);
+			console.log(result);
+		}
+		ergui();//二路归并，两个已经排好序的数组组合成一个新的排序好的数组*/
+		
+		//--------------------判断回文数字符串
+		/*function huiwen(str){
+			var result = str.split("");
+			var l = 0,r = result.length-1;
+			console.log(result);
+			var flag = false;
+			while(true){
+				if(result[l]==result[r]){
+					console.log(result[l]+","+result[r]);
+					l++;
+					r--;
+					console.log(l+","+r);
+					flag = true;
+				}else{
+					flag = false;
+					break;
+				}
+				if(l>=r){
+					break;
+				}
+			}	
+			return flag;
+		}
+		function main(){
+			var str = "qweewq";
+			console.log(huiwen(str));
+
+		}
+		main();//判断字符串回文*/
+		
+		//---------------------反转字符串
+		/*function reverseStr(str){
+			//1.以字符串格式操作
+			var newstr = "";
+			for(var i=str.length-1;i>=0;i--){
+				newstr+=str[i];
+			}
+			return newstr;
+			//2.转换成数组
+			var array = str.split("");
+			var i=0,j=array.length-1;
+			while(i<j){
+				let temp = array[i];
+				array[i] = array[j];
+				array[j] = temp;	
+				i++;
+				j--;
+			}
+			return array.join("");
+
+		}
+		function main(){
+			var str = "abcdefg";
+			var newstr = reverseStr(str);
+			console.log(newstr);
+		}
+		main();//反转字符串，字符串处理*/
+
+		//--------------------------生成指定长度随机字符串
+		/*function randomNum(num){
+			var str = 'abcdefghijklmnopqrstuvwxyz0123456789';
+			var i=1,newstr="";
+			while(i<=5){
+				newstr+=str[Math.round(Math.random()*str.length)];
+				i++;
+			}
+			console.log(newstr);
+		}
+		function main(){
+			var num = 5;
+			randomNum(num);
+		}
+		main();*/
+
+		//----------------------数组去重，利用indexOf
+		/*function quchong(array){
+			var newarray = [];
+			for(var i in array){
+				if(newarray.indexOf(array[i])==-1){
+					newarray.push(array[i]);
+					//console.log(a+","+newarray);
+				}
+			}
+			console.log(newarray);
+		}
+		function main(){
+			var array = new Array(1,1,2,2,2,3,4,5);
+			quchong(array);
+		}
+		main();*/
+		//--------------------统计字符串中重复次数最多的字符，使用对象，字符保存为键，次数保存为值。
+		/*var obj = {};
+		var str = 'abcbbaaabb';
+		for(let i=0,len=str.length;i<len;i++){
+			if(!obj[str[i]]){
+				obj[str[i]] = 1;
+			}else{
+				obj[str[i]]++;
+			}
+		}
+		var name="",value=0;
+		for(var o in obj){
+			if(value<obj[o]){
+				value = obj[o];
+				name = o;
+			}
+		}
+		console.log(name);*/
+		//------------------------数组中最大差值
+		/*function cha(array){
+			var max = array[0],min = array[0];
+			array.forEach((item)=>{
+				max<item?max=item:max=max;
+				min>item?min=item:min=min;
+			});
+			console.log(max-min);
+		}
+		(function main(){
+			var array = [2,1,2,3,4,5];
+			cha(array);
+		})();*/
+		//---------------------阶乘,非递归
+		/*function jiecheng(num){
+			var i = num;
+			var sum = 1;
+			while(i>0){
+				sum*=i;
+				i--;
+			}
+			console.log(sum);
+		}
+		(function(){
+			var num = 3;
+			jiecheng(num);
+		})();*/
+		//-----------------阶乘，递归
+		/*function jiecheng(num){
+			if(num>1){
+				return num*jiecheng(num-1);	//优先执行括号内的语句
+			}else{
+				return 1;
+			}
+			
+		}
+		(function(){
+			var num = 5;
+			console.log(jiecheng(num));
+		})();*/
+		//-----------------生成斐波那契数列，非递归
+		/*function shu(n){
+			var array = [];
+			array[0] = 0;
+			array[1] = 1;
+			var i=2;
+			while(i<n){
+				array[i] = array[i-1]+array[i-2];
+				i++;
+			}
+			console.log(array.join(","));
+		}
+		(function(){
+			shu(10);
+		})();*/
+		//-----------------生成斐波那契数列，递归,
+		//思路：先通过数组循环，对数据元素进行递归
+		/*function fb(n){
+			if(n>1) return fb(n-1)+fb(n-2);
+			if(n==1) return 1;
+			if(n==0) return 0;
+		}
+		(function(){
+			var array = [];
+			for(let i=0,len=5;i<len;i++){
+				array.push(fb(i));
+			}
+			console.log(array.join(","));
+		})();*/
+		//--------------------二分查找算法，非递归
+		//找到中间值下标，查找值与中间值对比，相等返回1，小于大于区间改变。
+		/*function erlu(array,key){
+			var left = 0,right=array.length-1;
+			while(left<=right){
+				var mid = parseInt((left+right)/2);
+				if(key==array[mid]){
+					return	mid;
+				}else if(key>array[mid]){
+					left = mid + 1;
+				}else if(key<array[mid]){
+					right = mid - 1;
+				}
+			}
+			return -1;
+		}	
+		(function(){
+			var array = [1,2,3,4,5,6,7,8];
+			console.log(erlu(array,8));
+		})();*/
+		//--------------------二分查找算法---递归
+		/*function er(array,key,l,r){
+			if(l>r) return -1;
+			var mid = parseInt((l+r)/2);
+			if(key==array[mid]){
+				return mid;
+			}else if(key<array[mid]){
+				return er(array,key,l,mid-1);
+			}else if(key>array[mid]){
+				return er(array,key,mid+1,r);
+			}
+
+		}
+		(function(){
+			var array = [1,2,3,4,5,6,7,8];
+			x = er(array,3,0,array.length-1);
+			console.log(x);
+		})();*/
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

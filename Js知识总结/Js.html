@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js知识总结</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		/*var a = "tome";
+		(function(){
+			if(typeof a=='undefined'){
+				//var  a = "boom";
+				console.log(a+"111");
+			}else{
+				console.log(a+"222");
+			}
+		})()*/
+		/*//函数的提升
+		console.log(a1);
+		console.log(a2);
+		function a1(){
+			console.log(a1);
+		}
+		var a2 = function(){
+			console.log(a2);
+		}*/
+		/*//函数的块级作用域
+		console.log(a1);
+		if(true){
+			function a1(){
+				console.log(a1);
+			}
+		}*/
+		/*//变量的提升,作用域
+		(function f1(){
+			if(true){
+				 a = "a";
+				//console.log(a);
+			}
+			console.log(a);
+		})();*/
+		/*//作用域链
+		console.log(foo);
+		var foo = function(){
+			var name = "name";
+			return function inner(){
+				console.log(name);
+			}
+		}*/
+		function test(){
+			var number = document.getElementById('number').value;
+		    var cnt = document.getElementById('cnt').value;
+		    var array = new Array();
+		    var count = 0;
+		    while(true){
+		    	if(count==number.length){
+		    		break;
+		    	}
+		    	array.push(number.substring(count,count+1));
+		    	count++;
+		    }
+		    array.sort();
+		    var count = 0;
+		    var newarr = new Array();
+		    var len = array.length;
+		    while(true){
+		    	if(count==number.length-cnt){
+		    		break;
+		    	}
+		    	newarr.push(array[--len]);
+		    	count++;
+		    }
+		    var num = '';
+		   	newarr.forEach(function(item){
+		   		num+=item;
+		   	});
+		   	console.log(num);
+		}
+		function init(){
+			document.getElementsByTagName('button')[0].addEventListener('click',test,false);
+		}
+		window.addEventListener('load',init,false);
+ 	  </script>
+ 	</head>
+ 	<body>
+ 		<input type="text" id="number">
+ 		<input type="text" id="cnt">
+ 		<button type="button">button</button>
+ 	</body>
+ 	</html>

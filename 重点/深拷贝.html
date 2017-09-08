@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>拷贝</title>
+	<script type="text/javascript">
+		var a = {
+			name:["zjb"],
+			age:20
+		}
+		/*
+		function copy(a){
+			var b = {};
+			for(var i in a){
+				b[i] = a[i];
+			}
+			return b;
+		}
+		var b = copy(a);
+		b.name.push("zzz");
+		console.log(a.name);*/
+		function copy(a,b){
+			var b = b||{};
+			for(var i in a){
+				if(typeof a[i]==="object"){
+					b[i] = (a[i].constructor===Array)?[]:{};
+					copy(a[i],b[i]);
+				}else{
+					b[i] = a[i];
+				}
+			}
+			return b;
+		}
+		var b = copy(a,b);
+		b.name.push("zzz");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

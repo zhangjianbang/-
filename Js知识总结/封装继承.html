@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS封装继承</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		//封装
+		/*function Cat(name,color){
+			this.name = name;
+			this.color = color;
+		}
+		Cat.prototype.eat = function(){
+			console.log(this.name+"吃东西");
+		}
+		var cat1 = new Cat("n","c");
+		console.log(Cat.prototype.isPrototypeOf(cat1));
+		console.log(cat1.hasOwnProperty("eat"));
+		console.log("name" in cat1);
+		for(var i in cat1){
+			console.log(i);
+		}*/
+		//继承---构造函数绑定--apply，call
+		/*function Animal(names){
+			this.names = names||"动物";
+		}
+		Animal.prototype.eat = "ee";
+		function Cat(name,color){
+			this.name = name;
+			this.color = color;
+			Animal.apply(this,['x']);//将父对象构造函数绑定在子对象上，这样不可以继承父对象的原型方法。但可以在继承时给父对象传参。
+		}
+		var cat = new Cat("大黄","黄色");
+		console.log(cat.names);*/
+		//继承---prototype模式
+		/*function Animal(names){
+			this.names = names||["动物"];
+		}
+		function Cat(name,color){
+			this.name = name;
+			this.color = color;
+		}
+		Cat.prototype = new Animal();//让原型对象指向被继承类的实例，完成继承。
+		var cat = new Cat("大黄","黄色");
+		var cat1 = new Cat("二黄","绿色");
+		cat.names.push("植物");
+		console.log(cat1.names);*/
+		//组合继承
+		function Animal(name){
+			this.name = name;
+			this.names = ["动物"];
+		}
+		Animal.prototype.eat=function(){
+			return this.name+"吃东西";
+		}
+		function Cat(name,color){
+			this.name = name;
+			this.color = color;
+			Animal.call(this,name);
+		}
+		Cat.prototype = new Animal();
+		Cat.prototype.constructor = Cat;
+		var cat1 = new Cat("大黄","黄色");
+		var cat2 = new Cat("二黄","绿色");
+		cat1.names.push("植物");
+		console.log(cat2.names);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

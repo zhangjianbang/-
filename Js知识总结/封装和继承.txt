@@ -1,0 +1,124 @@
+---------------------------------封装------------------------------------
+Javascript是基于面向对象的语言，但它并不是一种真正的面向对象（oop）语言，因为语法中没有Class（类）
+如果想把属性（property）和方法（method）封装成一个对象，或者把原型对象生成一个实例化对象，做法如下。
+
+1.构造函数模式
+
+	+ 添加不变属性type和一个方法
+	function Cat(name,color){
+		this.name = name;
+		this.color = color;
+		this.type = "猫科动物";
+		this.eat = function(){
+			console.log(this.name+"吃老鼠");
+		}
+	}
+	var cat1 = new Cat("大黄","黄色");
+	var car2 = new Cat("二黄","绿色");
+	console.log(cat1.type);//猫科动物
+	console.log(cat1.eat);//大黄吃老鼠
+	
+	缺点：对于每一个实例对象，type属性和eat方法都一样，所以没生成一个实例化对象，就会产生重复的属性和方法，这样会占用内存，导致效率下降。
+	cat1.eat = cat2.eat;//false
+
+2.prototype模式（构造函数改进版）
+
+	function Cat(name,color){
+		this.name = name;
+		this.color = color;
+	}
+	Cat.prototype.type = "猫科动物";
+	Cat.prototype.eat = function(){
+		console.log(this.name+"吃老鼠");
+	}
+
+	var cat1 = new Cat("大黄","黄色");
+	var car2 = new Cat("二黄","绿色");
+	console.log(cat1.type);//猫科动物
+	console.log(cat1.eat);//大黄吃老鼠
+
+	+ 这时所有实例的type和eat方法都指向了同一内存地址，也就是prototype原型对象，因此不会重复产生，提高了效率。
+
+	+ 本地属性和方法写在构造函数内，原型属性和方法写在构造函数外！
+
++isPrototypeOf()
+	判断实例判断是否在原型对象中
+	Cat.prototype.isPrototypeOf(cat1);//true
+
++hasOwnProperty()
+	每一个实例化对象都有此方法，用来判断某一属性是否是本地属性，还是继承自prototype对象的属性
+	cat1.hasOwnPrototype("name");//true
+	cat1.hasOwnPrototype("eat");//false
++in运算符
+	判断某个实例是否包含某个属性，不限于原型和本地
+	console.log("eat" in cat1);//true
+
+in运算符还可以遍历某个对象所有的属性
+	for(vat p in cat1){
+		console.log(p);//name,color,eat
+	}
+
+------------------------------继承-----------------------------------
+
+1.借用构造函数继承---通过apply、call
+	function Animal(names){
+		this.names = names||"动物";
+	}
+	Animal.prototype.eat = "吃食物";
+	function Cat(name,color){
+		this.name = name;
+		this.color = color;
+		Animal.apply(this,['植物']);//将父对象构造函数绑定在子对象上。
+	}
+	var cat = new Cat("大黄","黄色");
+	console.log(cat.names);//植物
+	console.log(cat.eat);//undefined
+优点：可以在继承时给父对象传参
+缺点：无法继承父对象的原型方法
+
+2.prototype（原型）继承
+
+	function Animal(names){
+		this.names = names||["动物"];
+	}
+	function Cat(name,color){
+		this.name = name;
+		this.color = color;
+	}
+	Cat.prototype = new Animal();//让原型对象指向被继承类的实例，完成继承。
+	var cat = new Cat("大黄","黄色");
+	var cat1 = new Cat("二黄","绿色");
+	cat.names.push("植物");
+	console.log(cat1.names);
+优点：可以继承父对象本地属性和原型方法
+缺点：无法给父对象传参，继承后的子对象的实例化共享子对象的所有属性。
+
+3.组合继承（借用构造函数和原型组合继承）
+	function Animal(name){
+		this.name = name;
+		this.names = ["动物"];
+	}
+	Animal.prototype.eat=function(){
+		return this.name+"吃东西";
+	}
+	function Cat(name,color){
+		this.name = name;
+		this.color = color;
+		Animal.call(this,name);
+	}
+	Cat.prototype = new Animal();
+	Cat.prototype.constructor = Cat;
+	var cat1 = new Cat("大黄","黄色");
+	var cat2 = new Cat("二黄","绿色");
+	cat1.names.push("植物");
+	console.log(cat1.names);//动物植物
+	console.log(cat2.names);//动物
+优点：可以给父对象传参，可以继承父对象本地属性和原型方法，子对象的实例不共享子对象属性修改。
+	
+		
+
+
+
+
+
+

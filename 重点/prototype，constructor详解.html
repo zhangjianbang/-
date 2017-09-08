@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var a = new Array(1,2,3);
+		console.log(a.__proto__);
+		console.log(a.constructor.prototype);
+		function f(){
+			this.name = "zjb";
+		}
+		f.prototype = {
+			age:20
+		}
+		f.prototype.constructor = f;
+		var ff = new f();
+		console.log(ff.name);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

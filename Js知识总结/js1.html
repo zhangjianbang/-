@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jsss</title>
+	<script type="text/javascript">
+		//闭包经典题！！！
+		/*function test(){
+			var array = new Array();
+			for(var i=0;i<10;i++){//声明的i会提升，所以i=10
+				array[i] = function(){
+					return i;
+				}
+			}
+			return array;
+		}
+		var t = new test();
+		for(var i=0;i<t.length;i++){
+			console.log(t[i]());
+		}*/
+		/*
+		function f1(){
+			var a = 20;
+			var f2 = function(){
+				return ("f2..."+a);
+			}
+			return f2;
+		}
+		var f = new f1();
+		console.log(f());*/
+		/*原型！！！
+		function baseClass(){
+			this.showMsg = function(){
+				console.log("baseClass");
+			}
+		}
+		function extendClass(){
+			this.showMsg = function(){
+				console.log("extendClass");
+			}
+		}
+		extendClass.prototype = new baseClass();
+		var instance = new extendClass();
+		instance.__proto__.showMsg();*/
+		/*function lator(){};
+		lator.prototype = {
+			add:function(x,y){
+				return x+y;
+			},
+			subtract:function(x,y){
+				return x-y;
+			}
+		}*/
+		/*var d = new Date();//原型和原型链
+		console.log(Date.prototype);
+		function f(){};
+		f.prototype.add = function(x,y){
+			return x+y;
+		};
+		var f1 = new f();
+		console.log(f1.__proto__);
+		console.log(f.__proto__);
+		var o = {};
+		var o1 = new Object();
+		console.log(o.__proto__);*/
+		
+		//var math = function(){};
+		/*math.prototype = {
+			max:function(x,y){
+				return Math.max(x,y);
+			},
+			min:function(x,y){
+				return Math.min(x,y);
+			}
+		}
+		var m = new math();
+		console.log(m.min(1,8));
+		console.log(m.__proto__.max);//可以查看到原型对象的具体实现方法，不安全
+		*/
+		/*var math = function(){};
+		math.prototype = function(){
+			max = function(x,y){
+				return Math.max(x,y);
+			},
+			min = function(x,y){
+				return Math.min(x,y);
+			}
+			return {
+				max:max,
+				min:min
+			}
+		}();
+		var m = new math();
+		console.log(m.max);
+		*/
+		//继承
+		/*function Animal(name){
+			//属性
+			this.name = name||'Animal';
+			//实例方法
+			this.sleep = function(){
+				console.log(this.name+"正在睡觉！");
+			}
+			
+		}
+		//原型方法
+		Animal.prototype.eat = function(food){
+			console.log(this.name+"正在吃"+food);
+		}
+
+		function Cat(age){
+			this.age = age||20;
+		}
+		Cat.prototype = new Animal();
+		Cat.prototype.name = 'cat';//当遍历原型链时找到相应属性就不会继续遍历
+		
+		var cat = new Cat();
+		console.log(cat.age);
+		cat.sleep();
+		cat.eat("竹子");
+		var a = new Animal();
+		console.log(a.name);
+		*/
+		var str = "12.3b";
+		console.log(parseFloat(str));
+	</script>
+	<style type="text/css">
+		header{
+			height: 100px;
+			width: 100%;
+			border:1px solid black;
+		}
+		section{
+			height: 500px;
+			width: 100%;
+			position:relative;
+			border:1px solid black;
+		}
+		nav{
+			width: 20%;
+			height: 100%;
+			border:1px solid black;
+			border-radius: 5px;
+			position: absolute;
+			left: 0;
+		}
+		content{
+			width: 80%;
+			height: 100%;
+			border:1px solid black;
+			border-radius: 5px;
+			position: absolute;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+	<header></header>
+	<section>
+		<nav></nav>
+		<content></content>
+	</section>
+</body>
+</html>

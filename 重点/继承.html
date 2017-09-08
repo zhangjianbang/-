@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		//借用构造函数继承call,apply
+		function a(names){
+			this.names = names||["人"];
+		}
+		a.prototype.eat = function(){
+			console.log(this.names+"吃东西");
+		}
+		/*
+		function b(name,age){
+			this.name = name;
+			this.age = age;
+			a.apply(this,["人类"]);
+		}
+		var b1 = new b("zjb",20);
+		var b2 = new b("zzz",21);
+		console.log(b2.names);*/
+		//原型继承
+		/*function b(name,age){
+			this.name = name;
+			this.age = age;
+		}
+		b.prototype = new a();
+		var b1 = new b("zjb",20);
+		var b2 = new b("zzz",21);
+		b1.names.push("人类");
+		console.log(b2);*/
+		//组合继承
+		/*function b(name,age){
+			this.name = name;
+			this.age = age;
+			a.apply(this,["人类"]);
+		}
+		b.prototype = new a();
+		b.prototype.constructor = b;
+		var b1 = new b("zjb",20);
+		var b2 = new b("zzz",21);*/
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
