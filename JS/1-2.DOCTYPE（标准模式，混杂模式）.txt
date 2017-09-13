@@ -1,0 +1,14 @@
+﻿DOCTYPE（Document Type Declaration 文档类型声明，缩写DTD）。
+通常情况下位于HTML文档的最前面位置。浏览器在解析HTML文档之前就可以确定该文档的类型，并确定以标准模式或混杂模式解析。（不同的渲染模式会影响浏览器对CSS代码或JS脚本的解析）
+
+如果文档开始处没有发现文档类型声明，或声明不完整，都会以混杂模式来解析。
+HTML4.01中<!doctype>声明指向一个DTD文档，由于HTML4.01是基于SGML，所以DTD规定了标签的标准。
+HTML5不基于SGML，所以不会指向DTD，只有一个<!doctype>。
+
+用JS来判断浏览器当前的模式
+	document.compatMode == "CSS1Compat"?"标准模式":"混杂模式"；
+
+<noscript>
+	用<noscript>来给不支持js的浏览器显示替代的内容。，可以包含出现在<body>标签内任何HTML元素，<script>除外。
+	+ 浏览器不支持JS脚本。
+	+ 浏览器支持脚本，但脚本被限制。
