@@ -1,15 +1,15 @@
-Í¨¹ıdocument.cookieÀ´´æ´¢£¬¶ÁÈ¡£¬ĞŞ¸Ä£¬É¾³ıcookie£»
+ é€šè¿‡document.cookieæ¥å­˜å‚¨ï¼Œè¯»å–ï¼Œä¿®æ”¹ï¼Œåˆ é™¤cookieï¼›
 
-1. ´æ´¢cookie£¬ÒÔ¼üÖµ¶ÔĞÎÊ½´æ´¢£¬¶àÖµÓÃ£»¸ô¿ª¡£
-	document.cookie = "name=ÕÅ½¨°î;age=20";
+1. å­˜å‚¨cookieï¼Œä»¥é”®å€¼å¯¹å½¢å¼å­˜å‚¨ï¼Œå¤šå€¼ç”¨ï¼›éš”å¼€ã€‚
+	document.cookie = "name=å¼ å»ºé‚¦;age=20";
 
-2. ¶ÁÈ¡cookie
-	var arrcookie = document.cookie.split(";")»ñÈ¡ĞÅÏ¢Êı×é
+2. è¯»å–cookie
+	var arrcookie = document.cookie.split(";")è·å–ä¿¡æ¯æ•°ç»„
 	for(var i=0;i<arrcookie.length;i++){
-		arrcookie.splie("=")[2];//»ñÈ¡value
+		arrcookie.splie("=")[2];//è·å–value
 	}
 
-3. ĞŞ¸Äcookie£¬Ö±½Ó¸øÏàÍ¬µÄ¼ü¸³Öµ¼´¿ÉĞŞ¸Ä¡£
-	document.cookie = "name=ÕÅÈı";
+3. ä¿®æ”¹cookieï¼Œç›´æ¥ç»™ç›¸åŒçš„é”®èµ‹å€¼å³å¯ä¿®æ”¹ã€‚
+	document.cookie = "name=å¼ ä¸‰";
 
-4.É¾³ıcookie£¬°Ñ´æ´¢µÄÊ±¼ä²ÎÊıÉèÖÃÎªÒÔÇ°µÄÊ±¼ä¼´¿É¡£
+4.åˆ é™¤cookieï¼ŒæŠŠå­˜å‚¨çš„æ—¶é—´å‚æ•°è®¾ç½®ä¸ºä»¥å‰çš„æ—¶é—´å³å¯ã€‚
