@@ -1,0 +1,5 @@
+定位：
+	static，默认值
+	relative，相对定位，相对于自己定位。
+	absolute，绝对定位，相对于不为static的父元素定位
+	fixed，固定定位，相对于窗口定位。

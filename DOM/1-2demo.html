@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>创建节点</title>
+	<script type="text/javascript">
+		function init(){
+			var p2 = document.createElement("p");
+			var div = document.getElementById("div");
+			var p1 = document.getElementById("p1");
+			p2.innerHTML = "2222";
+			p2.setAttribute("class","c2");
+			p2.style.cssText = "border:1px solid red;font-size:20px;";
+			div.insertBefore(p2,p1);
+			var p3 = document.createElement("p");
+			p3.innerHTML = "3333";
+			p3.style.cssText = "border:1px solid blue";
+			div.insertBefore(p3,p1);
+		} 
+		window.addEventListener('load',init,false);
+	</script>
+</head>
+<body>
+	<div id="div">
+		<p id="p1">111</p>
+	</div>
+</body>
+</html>

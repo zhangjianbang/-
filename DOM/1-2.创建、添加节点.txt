@@ -1,0 +1,20 @@
+1. 创建元素节点
+	var p = document.createElement("p");
+
+2.设置节点属性
+	p.setAttribute("class","c1");//key相同会覆盖value
+
+3.获取节点属性
+	p.getAttribute("class");
+
+4.设置节点样式
+	p.style.cssText = "border:1px solid red；font-size:20px";
+
+5.这是节点的值
+	p.innerHTML = "1111";//html的值
+	p.value = "2222";//文本框的值
+
+6.插入节点
+	parent--父节点
+	parent.appendChild(p);//插入到父节点所有子代元素的后面
+	parent.insertBefore(p,"任意子节点");//插入到任意子节点的前面

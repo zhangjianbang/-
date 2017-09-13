@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>sss</title>
+	<style type="text/css">
+		.outer{ border:1px solid #ccc; background:#fc9; color:#fff; margin:50px auto; padding:50px;}
+		.div1{ width:80px; height:80px; background:#f00; float:left; }
+		.div2{ width:80px; height:80px; background:blue; float:left; }
+		.div3{ width:80px; height:80px; background:sienna; float:left; }
+		/*第一种方式，在浮动元素后添加空标签*/
+		/*.div4{
+			clear: both;
+		}*/
+		/*第二种方式，设置父元素*/
+		/*.outer{
+			overflow: hidden;
+		}*/
+		/*第三种方式，伪类，最常用*/
+		.outer:after{
+			clear: both;
+			content: "";
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="div1" class="div2" id="1">1</div>
+		<div class="div2">2</div>
+		<div class="div3">3</div>
+		<div class="div4"></div>
+	</div>
+</body>
+</html>

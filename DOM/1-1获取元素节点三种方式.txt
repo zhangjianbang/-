@@ -1,0 +1,25 @@
+1.通过id获取
+	document.getElementById("id");
+
+2.通过标签名获取
+	document.getElementsByTagName("div");//获取所有div节点，返回数组对象。
+
+3.通过class获取
+	document.getElementsByClassName("public");//获取class为public的元素节点，返回数组对象
+	+ 并不是所有浏览器都支持此获取方法。
+
+兼容各浏览器的class获取节点方法：
+	function getNode(classname){
+		if(document.getElementsByClassName){
+			return document.getElementsByClassName;
+		}else{
+			var allNode = document.getElementsByTagName("*");
+			var results = new Array();
+			for(var i=0;i<allNode.length;i++){
+				if(allNode[i].className.indexOf(classname)){
+					results.push(allNode[i]);
+				}
+			}
+			return results;
+		}
+	}

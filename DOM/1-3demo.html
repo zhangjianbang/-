@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>遍历节点</title>
+	<script type="text/javascript">
+		function init(){
+			var ul = document.getElementById("ul");
+			console.log(ul.childNodes);//获取ul下所有子节点，包括元素节点,文本节点
+			console.log(ul.children);//只获取元素子节点
+			console.log(ul.children[0].parentNode);//获取父节点
+			console.log(ul.children[0].nextSibling);//下个兄弟节点
+			console.log(ul.children[1].previousSibling);//上个兄弟节点
+			console.log(ul.children[0].nextElementSibling);//下个兄弟元素节点
+			console.log(ul.children[1].previousElementSibling);//上个兄弟元素节点
+			console.log(ul.lastChild);//最后一个子节点
+			console.log(ul.firstChild);//第一个子节点
+			console.log(ul.lastElementChild);//最后一个子元素节点
+			console.log(ul.firstElementChild);//第一个子元素节点
+		}
+		window.addEventListener('load',init,false);
+	</script>
+</head>
+<body>
+	<ul id="ul">
+		<li class="111">111</li>
+		<li class="222">222</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,19 @@
+节点有三个属性
+	节点名：nodeName
+	节点类型：nodeType    元素节点：1，属性节点：2，文本节点：3
+	节点值：nodeValue
+
+child.parentNode//获取父节点
+
+parent.children//获取所有子元素节点
+parent.childNodes//获取所有子节点
+
+parent.lastChild//获取最后一个子节点
+parent.firstChild//获取第一个子节点
+parent.lastElementChild//获取最后一个子元素节点
+parent.firstElementChild//获取第一个子元素节点
+
+node.nextSbiling//获取下一个兄弟节点
+node.previousSbiling//获得上一个兄弟节点
+node.nextElementSbiling//获取下一个兄弟元素节点
+node.previousElementSbiling//获得上一个兄弟元素节点
