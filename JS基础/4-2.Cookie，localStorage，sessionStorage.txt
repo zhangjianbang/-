@@ -1,5 +1,5 @@
-HTML5¿Í»§¶Ë´æ´¢Êı¾İÁ½ÖÖ·½·¨
-	localStorage£¬sessionStorage
+ HTML5å®¢æˆ·ç«¯å­˜å‚¨æ•°æ®ä¸¤ç§æ–¹æ³•
+	localStorageï¼ŒsessionStorage
 
 	localStorage.setItem("name","localStorage");
 	console.log(localStorage.getItem("name"));
@@ -7,14 +7,14 @@ HTML5¿Í»§¶Ë´æ´¢Êı¾İÁ½ÖÖ·½·¨
 	sessionStorage.setItem("name","sessionStorage");
 	console.log(sessionStorage.getItem("name"));
 
-session,localStorage,sessionStorageÈıÖÖÇø±ğ
+session,localStorage,sessionStorageä¸‰ç§åŒºåˆ«
 
-ÉúÃüÖÜÆÚ£º
-	session£ºÓÃÀ´´æ´¢ÓÃ»§Éí·İ£¬¿ÉÒÔÉèÖÃÉùÃ÷ÖÜÆÚ£¬ä¯ÀÀÆ÷¹Ø±Õ²»»áÉ¾³ı£¬Ê¼ÖÕÔÚÍ¬Ô´httpÇëÇóÖĞĞ¯´ø
-	localStorage£ºÃ»ÓĞÊ±¼äÏŞÖÆµÄÊı¾İ´æ´¢
-	sessionStorage - Õë¶ÔÒ»¸ö session µÄÊı¾İ´æ´¢£¬ä¯ÀÀÆ÷¹Ø±Õ»á±»É¾³ı
+ç”Ÿå‘½å‘¨æœŸï¼š
+	sessionï¼šç”¨æ¥å­˜å‚¨ç”¨æˆ·èº«ä»½ï¼Œå¯ä»¥è®¾ç½®å£°æ˜å‘¨æœŸï¼Œæµè§ˆå™¨å…³é—­ä¸ä¼šåˆ é™¤ï¼Œå§‹ç»ˆåœ¨åŒæºhttpè¯·æ±‚ä¸­æºå¸¦
+	localStorageï¼šæ²¡æœ‰æ—¶é—´é™åˆ¶çš„æ•°æ®å­˜å‚¨
+	sessionStorage - é’ˆå¯¹ä¸€ä¸ª session çš„æ•°æ®å­˜å‚¨ï¼Œæµè§ˆå™¨å…³é—­ä¼šè¢«åˆ é™¤
 
-´æ´¢´óĞ¡£º
-	session²»³¬¹ı4kb£¬ÎŞ·¨´æ´óÁ¿Êı¾İ
-	localStorage,sessionStorage¿É´ï5MB»ò¸ü´ó
+å­˜å‚¨å¤§å°ï¼š
+	sessionä¸è¶…è¿‡4kbï¼Œæ— æ³•å­˜å¤§é‡æ•°æ®
+	localStorage,sessionStorageå¯è¾¾5MBæˆ–æ›´å¤§
 	
