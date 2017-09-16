@@ -1,52 +1,52 @@
-Êý¾ÝÀàÐÍ£º
-	»ù±¾Êý¾ÝÀàÐÍ(5ÖÖ)£ºUndefined,Null,String,Number,Boolean
-	¸´ÔÓÊý¾ÝÀàÐÍ£ºObject;ÓÉÎÞÐòµÄ¼üÖµ¶Ô×é³É¡£
+ æ•°æ®ç±»åž‹ï¼š
+	åŸºæœ¬æ•°æ®ç±»åž‹(5ç§)ï¼šUndefined,Null,String,Number,Boolean
+	å¤æ‚æ•°æ®ç±»åž‹ï¼šObject;ç”±æ— åºçš„é”®å€¼å¯¹ç»„æˆã€‚
 	
-	typeofÔËËã·¨£¨ÓÃÀ´¼ì²âÊÇÄÄÖÖÊý¾ÝÀàÐÍ£©
-	¼ì²âµÄ½á¹ûÓÐ:
-	undefined(Î´¶¨Òå)£¬string£¨×Ö·ûÀàÐÍ£©£¬number£¨ÊýÖµÀàÐÍ£©£¬boolean£¨²¼¶ûÀàÐÍ£©
-	object£¨¶ÔÏó»ònull£©£¬function£¨º¯Êý£©
+	typeofè¿ç®—æ³•ï¼ˆç”¨æ¥æ£€æµ‹æ˜¯å“ªç§æ•°æ®ç±»åž‹ï¼‰
+	æ£€æµ‹çš„ç»“æžœæœ‰:
+	undefined(æœªå®šä¹‰)ï¼Œstringï¼ˆå­—ç¬¦ç±»åž‹ï¼‰ï¼Œnumberï¼ˆæ•°å€¼ç±»åž‹ï¼‰ï¼Œbooleanï¼ˆå¸ƒå°”ç±»åž‹ï¼‰
+	objectï¼ˆå¯¹è±¡æˆ–nullï¼‰ï¼Œfunctionï¼ˆå‡½æ•°ï¼‰
 
-	£¡typeofÊÇÔËËã·û£¬²»ÊÇº¯Êý¡£ËùÒÔ()¿É²»ÓÃ¡£typeof 2 === typeof (2)
-	£¡null ±»Ä¬ÈÏÎªÒ»¸ö¿Õ¶ÔÏóµÄÒýÓÃ£¬ËùÒÔ·µ»Øobject¡£
-	£¡º¯Êý²»ÊÇÊý¾ÝÀàÐÍ£¬µ«ÓÐÌØ¶¨µÄÊôÐÔ£¬¿ÉÒÔÓÃtypeofÀ´Çø·Öº¯ÊýºÍ¶ÔÏó¡£
+	ï¼typeofæ˜¯è¿ç®—ç¬¦ï¼Œä¸æ˜¯å‡½æ•°ã€‚æ‰€ä»¥()å¯ä¸ç”¨ã€‚typeof 2 === typeof (2)
+	ï¼null è¢«é»˜è®¤ä¸ºä¸€ä¸ªç©ºå¯¹è±¡çš„å¼•ç”¨ï¼Œæ‰€ä»¥è¿”å›žobjectã€‚
+	ï¼å‡½æ•°ä¸æ˜¯æ•°æ®ç±»åž‹ï¼Œä½†æœ‰ç‰¹å®šçš„å±žæ€§ï¼Œå¯ä»¥ç”¨typeofæ¥åŒºåˆ†å‡½æ•°å’Œå¯¹è±¡ã€‚
 
-1.UndefinedÀàÐÍ
-	Ö»ÓÐÎ¨Ò»Öµ£ºundefined£¬±íÊ¾Î´³õÊ¼»¯¡£
+1.Undefinedç±»åž‹
+	åªæœ‰å”¯ä¸€å€¼ï¼šundefinedï¼Œè¡¨ç¤ºæœªåˆå§‹åŒ–ã€‚
 	var a; console.log(a);//undefined
-2.NullÀàÐÍ
-	Î¨Ò»Öµ£ºnull¡£
-	¿ÉÒÔ±íÊ¾Îª¿Õ¶ÔÏóµÄÖ¸Õë£¬ËùÒÔÔÚÓÃtypeof¼ì²âNullÀàÐÍÊ±³öÀ´object¡£
-	£¡ÒòÎªundefinedÊÇnullµÄÅÉÉú£¬ËùÒÔundefined==null;
-3.BooleanÀàÐÍ
-	ÓÐÁ½¸öÖµ£ºtrue£¬false£¨True£¬False²»ÊôÓÚBooleanÀàÐÍ£©
-	¿ÉÒÔ°ÑÆäËûÊý¾ÝÀàÐÍ×ª»»³ÉBooleanÀàÐÍ£¬Í¨¹ý×ªÐÍº¯ÊýBoolean£¨£©¡£
-	¡·¡·×ª»»±íÈçÏÂ£º
-	Êý¾ÝÀàÐÍ		Õæ			¼Ù
+2.Nullç±»åž‹
+	å”¯ä¸€å€¼ï¼šnullã€‚
+	å¯ä»¥è¡¨ç¤ºä¸ºç©ºå¯¹è±¡çš„æŒ‡é’ˆï¼Œæ‰€ä»¥åœ¨ç”¨typeofæ£€æµ‹Nullç±»åž‹æ—¶å‡ºæ¥objectã€‚
+	ï¼å› ä¸ºundefinedæ˜¯nullçš„æ´¾ç”Ÿï¼Œæ‰€ä»¥undefined==null;
+3.Booleanç±»åž‹
+	æœ‰ä¸¤ä¸ªå€¼ï¼štrueï¼Œfalseï¼ˆTrueï¼ŒFalseä¸å±žäºŽBooleanç±»åž‹ï¼‰
+	å¯ä»¥æŠŠå…¶ä»–æ•°æ®ç±»åž‹è½¬æ¢æˆBooleanç±»åž‹ï¼Œé€šè¿‡è½¬åž‹å‡½æ•°Booleanï¼ˆï¼‰ã€‚
+	ã€‹ã€‹è½¬æ¢è¡¨å¦‚ä¸‹ï¼š
+	æ•°æ®ç±»åž‹		çœŸ			å‡
 	Boolean		true			false
-	String		·Ç¿Õ×Ö·û´®		¡°¡±¿Õ×Ö·û´®
-	Number		·Ç0£¨ÎÞÇî´ó£©		0
-	Object		ÈÎºÎ¶ÔÏó£¨°üÀ¨¿Õ¶ÔÏó£©	null
-	Undefined	²»Ê¹ÓÃ			undefined
-4.NumberÀàÐÍ
-	½øÐÐËãÊýÔËËãÊ±Ê¹ÓÃÊ®½øÖÆ¸ñÊ½¡£
-	°Ë½øÖÆ£ºµÚÒ»Î»Îª0£¬ºóÃæÎª0~7£¨ºóÃæÖµ³¬¹ý·¶Î§£¬µÚÒ»Î»ºöÂÔ£¬°´ÕÕÊ®½øÖÆ¼ÆËã£©
-	Ê®Áù½øÖÆ£ºµÚÒ»Î»Îª0x£¬ºóÃæÎª0~9£¬A~F£¨²»Çø·Ö´óÐ¡Ð´£¬³¬¹ý·¶Î§±¨´í£©
+	String		éžç©ºå­—ç¬¦ä¸²		â€œâ€ç©ºå­—ç¬¦ä¸²
+	Number		éž0ï¼ˆæ— ç©·å¤§ï¼‰		0
+	Object		ä»»ä½•å¯¹è±¡ï¼ˆåŒ…æ‹¬ç©ºå¯¹è±¡ï¼‰	null
+	Undefined	ä¸ä½¿ç”¨			undefined
+4.Numberç±»åž‹
+	è¿›è¡Œç®—æ•°è¿ç®—æ—¶ä½¿ç”¨åè¿›åˆ¶æ ¼å¼ã€‚
+	å…«è¿›åˆ¶ï¼šç¬¬ä¸€ä½ä¸º0ï¼ŒåŽé¢ä¸º0~7ï¼ˆåŽé¢å€¼è¶…è¿‡èŒƒå›´ï¼Œç¬¬ä¸€ä½å¿½ç•¥ï¼ŒæŒ‰ç…§åè¿›åˆ¶è®¡ç®—ï¼‰
+	åå…­è¿›åˆ¶ï¼šç¬¬ä¸€ä½ä¸º0xï¼ŒåŽé¢ä¸º0~9ï¼ŒA~Fï¼ˆä¸åŒºåˆ†å¤§å°å†™ï¼Œè¶…è¿‡èŒƒå›´æŠ¥é”™ï¼‰
 
-	¶Ô´óÊýÖµ£ºNumber.MAX_VALUE£¬×îÐ¡Êý×é£ºNumber.MIN_VALUE
-	ÎÞÇî´óÎÞÇîÐ¡Îª£¨+-Infinity£©£¬ÓÃisFinite()º¯ÊýÅÐ¶ÏÊÇ·ñÎÞÇî¡£
+	å¯¹å¤§æ•°å€¼ï¼šNumber.MAX_VALUEï¼Œæœ€å°æ•°ç»„ï¼šNumber.MIN_VALUE
+	æ— ç©·å¤§æ— ç©·å°ä¸ºï¼ˆ+-Infinityï¼‰ï¼Œç”¨isFinite()å‡½æ•°åˆ¤æ–­æ˜¯å¦æ— ç©·ã€‚
 
-	NaN·ÇÊýÖµÀàÐÍ£¬isNaN()º¯ÊýÅÐ¶ÏÊÇ·ñ·ÇÊýÖµ
+	NaNéžæ•°å€¼ç±»åž‹ï¼ŒisNaN()å‡½æ•°åˆ¤æ–­æ˜¯å¦éžæ•°å€¼
 
-	Number()º¯Êý°ÑÈÎÒâÊý¾ÝÀàÐÍ×ª»»³ÉÊýÖµ¡£
-	parseInt(value,»ùÊý)£»°Ñ×Ö·û´®×ª»»³ÉÕûÊýÐÍÊýÖµ£¬µÚ¶þ¸ö²ÎÊýÎª»ùÊý£¬¸æËßº¯ÊýÒÔÄÄÖÖ½øÖÆ½øÐÐ½âÎö¡£
-	parseFloat(value)£»°Ñ×Ö·û´®×ª»»³É¸¡µãÐÍÊýÖµ¡£
-5.StringÀàÐÍ
-	¿ÉÒÔÊ¹ÓÃ¡®£¬¡°
-	×ÖÃæÁ¿£º\n»»ÐÐ£¬\tÖÆ±í£¬\bÍË¸ñ£¬\r»Ø³µ£¬\\Ð±¸Ü
-	Ê¹ÓÃtoString£¨£©·½·¨°ÑÊý×Ö×ª»»³É×Ö·û´®¡£
-	String()º¯Êý°ÑÆäËûÊý¾ÝÀàÐÍ×ª»»³É×Ö·ûÀàÐÍ¡£
-6.ObjectÀàÐÍ
+	Number()å‡½æ•°æŠŠä»»æ„æ•°æ®ç±»åž‹è½¬æ¢æˆæ•°å€¼ã€‚
+	parseInt(value,åŸºæ•°)ï¼›æŠŠå­—ç¬¦ä¸²è½¬æ¢æˆæ•´æ•°åž‹æ•°å€¼ï¼Œç¬¬äºŒä¸ªå‚æ•°ä¸ºåŸºæ•°ï¼Œå‘Šè¯‰å‡½æ•°ä»¥å“ªç§è¿›åˆ¶è¿›è¡Œè§£æžã€‚
+	parseFloat(value)ï¼›æŠŠå­—ç¬¦ä¸²è½¬æ¢æˆæµ®ç‚¹åž‹æ•°å€¼ã€‚
+5.Stringç±»åž‹
+	å¯ä»¥ä½¿ç”¨â€˜ï¼Œâ€œ
+	å­—é¢é‡ï¼š\næ¢è¡Œï¼Œ\tåˆ¶è¡¨ï¼Œ\bé€€æ ¼ï¼Œ\rå›žè½¦ï¼Œ\\æ–œæ 
+	ä½¿ç”¨toStringï¼ˆï¼‰æ–¹æ³•æŠŠæ•°å­—è½¬æ¢æˆå­—ç¬¦ä¸²ã€‚
+	String()å‡½æ•°æŠŠå…¶ä»–æ•°æ®ç±»åž‹è½¬æ¢æˆå­—ç¬¦ç±»åž‹ã€‚
+6.Objectç±»åž‹
 	
 	
 
