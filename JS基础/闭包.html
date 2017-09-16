@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>闭包</title>
+	<script type="text/javascript">
+		/*闭包是可以访问另一个函数内部变量的函数
+		使用闭包可以设计私有的方法和变量，并通过特权方法来访问。
+		闭包的应用场景：
+			1.使用闭包代替全局变量
+			2.访问其他函数内部的参数
+			3.包装相应的功能
+		闭包缺点：
+			1.闭包内变量无法被回收，造成内存泄漏
+		*/
+		var test = (function(){
+			var name = "张建邦";
+			var getname = function(){
+				return name;
+			}
+			return {getname:getname}
+		})();
+		console.log(test.name);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>命名空间</title>
+	<script type="text/javascript">
+		/*在js中创建的对象默认是全局对象，这样有可能导致名称的重复，混乱
+		利用命名空间可以避免命名的重复,外部用一个对象包裹需要用到的函数和变量
+		创建命名空间后代码清晰可读，更利于后期维护与更新。
+		*/
+		//1.利用字面量对象打包相关函数和变量，用字面量模拟命名空间
+		/*var NAME = {
+			person:function(name){
+				this.name = name;
+				this.getName = function(){
+					return this.name;
+				}
+			},
+			.....//可写多个
+		}
+		var n = new NAME.person("zjb");
+		console.log(n.getName());*/
+		//2.改进版
+		var SPACE = SPACE || {};//判断命名空间是否重复
+		SPACE.person = function(name){
+			this.name = name;
+		}
+		SPACE.person.prototype.getName = function(){
+			return this.name;
+		}
+		var p = new SPACE.person("zz");
+		console.log(p.getName());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

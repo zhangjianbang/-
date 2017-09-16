@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<title>获取所有checkbox元素</title>
+</head>
+<body>
+	<input type="checkbox" name="checkbox1">吃饭
+	<input type="checkbox" name="checkbox2">睡觉
+	<input type="text" name="text" value="222">
+	<button type="button">btn</button>
+	<script type="text/javascript">	
+		function init(){
+			var inp = document.getElementsByTagName("input");
+			var obj = obj||[];
+			for(let i=0;i<inp.length;i++){
+				if(inp[i].checked){
+					obj.push(inp[i]);
+				}
+			}
+			console.log(obj);
+		}
+		document.getElementsByTagName("button")[0].addEventListener('click',init,false);
+	</script>
+</body>
+</html>

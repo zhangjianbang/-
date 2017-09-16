@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ajax</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*Ajax操作步骤
+		1.创建XMLHttpRequest对象
+		2.创建HTTP请求，设置请求的方式，URL，参数。
+		3.设置响应HTTP请求状态变化的回调函数
+		4.发送HTTP请求
+		5.获取数据，使用js和DOM局部刷新数据
+		*/
+		var xhr = new XMLHttpRequest();
+		xhr.open("post/get",url,true);
+		xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');//post才添加
+		xhr.addEventListener('readystatechange',()=>{
+			if(xhr.readyState==4&&status==200){
+				var json = JSON.parse(xhr.responseText);
+				...
+			}
+		},false);
+		xhr.send(param/null);
+
+		/*
+		xhr对象请求状态码
+		0：未初始化XMLHttpRequest对象
+		1：正在加载
+		2：加载完毕
+		3：正在交互
+		4：交互完成
+		*/
+		/*
+		HTTP状态码
+		1xx（临时响应）表示临时响应并需要请求者继续执行操作的状态代码
+		100（继续）请求者应继续提出请求，服务器已收到请求第一部分，等待得二部分请求。
+		101（切换协议）请求者要求服务器切换协议，服务器已确认并准备切换。
+
+		2xx（成功）表示成功处理了请求的状态码
+		200：（成功）服务器成功处理请求，表示返回页面。
+		201：（已创建）请求成功并创建新的资源
+		202：（已接受）服务器已接受请求，但尚未处理
+		203：（非授权信息）
+		204：（无内容），服务器成功处理请求，但没有返回任何内容
+		205：（重置内容）
+		206：（部分内容）
+
+		3xx（重定向）表示要完成请求，需要进一步操作。
+		300：（多种选择）
+		301：（永久移动）请求的网页被永久移动到新位置
+		302：（临时移动）服务器从不同位置的网页响应请求，但请求者应继续用原有位置请求
+		303：（查看其他位置）
+		304：（未修改）
+		305：（使用代理）
+		307：（临时重定向）
+
+		4xx（请求作物）
+		401：（未授权），请求要求身份验证，对于需要登录的网页，返回此响应。
+		403：（禁止）
+		404：（未找到）
+
+		5xx（服务器错误）
+		500：（内部错误）
+		*/
+	</script>
+</body>
+</html>

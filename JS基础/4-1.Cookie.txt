@@ -1,0 +1,15 @@
+通过document.cookie来存储，读取，修改，删除cookie；
+
+1. 存储cookie，以键值对形式存储，多值用；隔开。
+	document.cookie = "name=张建邦;age=20";
+
+2. 读取cookie
+	var arrcookie = document.cookie.split(";")获取信息数组
+	for(var i=0;i<arrcookie.length;i++){
+		arrcookie.splie("=")[2];//获取value
+	}
+
+3. 修改cookie，直接给相同的键赋值即可修改。
+	document.cookie = "name=张三";
+
+4.删除cookie，把存储的时间参数设置为以前的时间即可。

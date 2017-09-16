@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jsonp跨域</title>
+</head>
+<body>
+	<p id="p">未跨域文本</p>
+	<button type="button" id="btn">点击跨域显示</button>
+	<script type="text/javascript">
+		/*
+		利用script标签可以跨域的特征，把跨域地址和参数以及回调函数放到src中
+		只能发送get请求。
+		*/
+		//通过回调接受响应的json数据，并进行处理
+		function callback(datas){
+			
+		}
+		function init(){
+			var script = document.createElement("script");
+			var url = "data.json?call=callback";//请求的url、参数、回调函数名
+			script.setAttribute("src",url);
+			document.getElementsByTagName("head")[0].appendChild(script);//把script标签添加到head中
+		}
+		document.getElementById("btn").addEventListener('click',init,false);
+	</script>
+</body>
+</html>

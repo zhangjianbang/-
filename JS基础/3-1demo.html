@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>读取对象属性</title>
+	<script type="text/javascript">
+		var a = {
+			name:"zjb",
+			age:function(){
+				console.log("20");
+			}
+		}
+		var str = ["name","age"];
+		console.log(str[0]);//undefined，不能通过点获取，除非用户输入
+		a.age();//点可以获取对象属性和方法
+		console.log(a[str[0]]);
+		a["age"]();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

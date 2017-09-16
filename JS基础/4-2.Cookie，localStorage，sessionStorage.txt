@@ -1,0 +1,20 @@
+HTML5客户端存储数据两种方法
+	localStorage，sessionStorage
+
+	localStorage.setItem("name","localStorage");
+	console.log(localStorage.getItem("name"));
+	
+	sessionStorage.setItem("name","sessionStorage");
+	console.log(sessionStorage.getItem("name"));
+
+session,localStorage,sessionStorage三种区别
+
+生命周期：
+	session：用来存储用户身份，可以设置声明周期，浏览器关闭不会删除，始终在同源http请求中携带
+	localStorage：没有时间限制的数据存储
+	sessionStorage - 针对一个 session 的数据存储，浏览器关闭会被删除
+
+存储大小：
+	session不超过4kb，无法存大量数据
+	localStorage,sessionStorage可达5MB或更大
+	

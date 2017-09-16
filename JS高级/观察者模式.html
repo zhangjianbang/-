@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>观察者模式</title>
+	<script type="text/javascript">
+		/*观察者模式
+		是一种创建松散耦合的技术。
+		它定义了对象间的一对多的关系。
+		当主体对象发生改变，其余依赖它的对象都将获得通知。
+		由发布者和订阅者组成，发布者发布事件，订阅者通过订阅事件观察主体。
+		主体不知道观察者任何事情，观察者知道主体并能注册回调函数。
+		*/
+		//被观察者对象（发布者）
+		var F1 = function(){
+			//保存所有观察者（订阅者）
+			var sbuscribe = [];
+			//添加所有订阅者
+			this.add = function(sbu){
+				sbuscribe.push(sbu);
+			}
+			//发布者执行操作
+			this.do = function(){
+				console.log("发布者正在发布第一件事");
+				var datas = ["苹果","香蕉","西瓜"];
+				//通知所有订阅者,调用通知方法
+				this.inform(datas);
+				console.log("发布者正在发布第二件事");
+			}
+			this.inform = function(datas){
+				if(sbuscribe.length==0){
+					return "";
+				};
+				for(var i=0;i<sbuscribe.length;i++){
+					sbuscribe[i].update(this,datas);
+				}
+			}
+			this.callback = function(){
+				console.log("订阅者执行完毕！");
+			}
+		}
+		//观察者（订阅者）
+		var F2 = function(){
+			this.update = function(sbuscribe,datas){
+				console.log("订阅者F2正在做事情");
+				for(var i=0;i<datas.length;i++){
+					console.log(datas[i]);
+				}
+				sbuscribe.callback();
+			}
+		}
+		var F3 = function(){
+			this.update = function(sbuscribe,datas){
+				console.log("订阅者F3正在做事情");
+				for(var i=0;i<datas.length;i++){
+					console.log(datas[i]);
+				}
+				sbuscribe.callback();
+			}
+		}
+		function main(){
+			//实例化
+			var f1 = new F1();
+			var f2 = new F2();
+			var f3 = new F3();
+			//让订阅者加入发布者
+			f1.add(f2);
+			f1.add(f3);
+			f1.do();	
+		}
+		main();
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
